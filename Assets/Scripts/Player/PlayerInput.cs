@@ -35,11 +35,13 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale == 0f) {
+        if (Time.timeScale == 0f)
+        {
             return;
         }
 
-        if (canMove) {
+        if (canMove)
+        {
             Vector2 directionalInput = new Vector2(player.GetAxisRaw(horizontalInput), player.GetAxisRaw(verticalInput));
             movement.SetDirectionalInput(directionalInput);
 
@@ -68,7 +70,8 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
-    public void DisableJump() {
+    public void DisableJump()
+    {
         canJump = false;
     }
 
@@ -95,9 +98,10 @@ public class PlayerInput : MonoBehaviour
         canMove = true;
     }
 
-    public bool CanMove() {
+    public bool CanMove()
+    {
         return canMove;
     }
 
- 
+
 }

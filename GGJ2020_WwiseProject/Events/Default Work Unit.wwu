@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Start_Gameplay" ID="{812012EF-95E7-4895-AA11-B49247399810}"/>
+				<Event Name="Set_State_SynthWinning" ID="{F49A49FB-EC60-458B-887D-4D4F43EFE62F}"/>
+				<Event Name="Set_State_Rock_Winning" ID="{A05C8740-CF77-47E0-97B3-F8A15044078F}"/>
+				<Event Name="End_Gameplay" ID="{F6F0859C-478D-47EA-ACD9-7D65C4269CBC}"/>
+				<Event Name="New_Event" ID="{74223744-8824-44A0-B399-ADB46323AE50}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

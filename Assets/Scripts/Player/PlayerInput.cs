@@ -54,7 +54,7 @@ public class PlayerInput : MonoBehaviour
                 // TODO: interact with cogs
             }
 
-            if (player.GetKeyDown(KeyCode.E))
+            /*if (player.GetKeyDown(KeyCode.E))
             {
                 if (grabCog.cogNearMe != null)
                 {
@@ -64,7 +64,7 @@ public class PlayerInput : MonoBehaviour
                 {
                     grabCog.ThrowCog();
                 }
-            }
+            }*/
         }
     }
 

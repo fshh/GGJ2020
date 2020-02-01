@@ -8,13 +8,13 @@ public class WinScreenController : MonoBehaviour
     public Sprite team1Win;
     public Sprite team2Win;
     private Image myImage;
-    public int winner;
+    public GameObject gameController;
     // Start is called before the first frame update
     void Start()
     {
         myImage = GetComponent<Image>();
         // Filler conditional until game controller is built
-        if (winner == 1) {
+        if (gameController.GetComponent<GameController>().GetWinner() == 1) {
             myImage.sprite = team1Win;
         } else {
             myImage.sprite = team2Win;

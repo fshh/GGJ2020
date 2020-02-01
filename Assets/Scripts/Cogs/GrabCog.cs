@@ -11,6 +11,9 @@ public class GrabCog : MonoBehaviour
     public Transform heldCogPosit;
     public CogWheel cogNearMe;
     public GrabCog myTeamMate;
+    private ContactFilter2D contactFilter;
+
+
     //this is the cog on the ground that gets destoryed when a player picks one up
 
     // Start is called before the first frame update
@@ -23,23 +26,25 @@ public class GrabCog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponentInParent<CogWheel>())
         {
-            Debug.Log("touched");
+            //Debug.Log("touched");
             cogNearMe = collision.transform.parent.GetComponent<CogWheel>();
+           
         }
     }
 
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponentInParent<CogWheel>())
+        if (collision.GetComponentInParent<CogWheel>())
         {
+            //Debug.Log("Stepped away");
             cogNearMe = null;
         }
     }

@@ -9,12 +9,16 @@ public class Controller2D : RaycastController
     public CollisionInfo collisions;
     [HideInInspector]
     public Vector2 playerInput;
+    
+    private RigidBody2D rb;
 
     public override void Start()
     {
         base.Start();
 
         collisions.faceDir = 1;
+        
+        rb = GetComponent<RigidBody2D>();
     }
 
     public void Move(Vector2 moveAmount, bool standingOnPlatform = false)
@@ -46,7 +50,8 @@ public class Controller2D : RaycastController
             VerticalCollisions(ref moveAmount);
         }
 
-        transform.Translate(moveAmount);
+        //transform.Translate(moveAmount);
+        rb.MovePosition((Vector2)transform.position + moveAmount);
 
         if (standingOnPlatform)
         {

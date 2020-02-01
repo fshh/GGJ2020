@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6378201955597847103}
   - component: {fileID: 8611408223144541065}
   - component: {fileID: 1966780126684202046}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 5667467570935709837}
   - component: {fileID: 2145909068683149804}
   - component: {fileID: 9162498529439345237}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fdff927df34dc4076bfe9968b0f17062, type: 3}
-  m_Color: {r: 0.990566, g: 0.34109113, b: 0.34109113, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1024
   horizontalRayCount: 0
   verticalRayCount: 0
   horizontalRaySpacing: 0
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 8405686522390526789}
   - component: {fileID: 4755461488005486502}
   - component: {fileID: 6629702350529814015}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

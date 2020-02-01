@@ -4,6 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Through
   - SpawnPoint
   layers:
   - Default
@@ -14,9 +15,9 @@ TagManager:
   - UI
   - 
   - 
-  - Player
+  - Team1
+  - Team2
   - Platform
-  - 
   - 
   - 
   - 

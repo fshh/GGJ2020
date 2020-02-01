@@ -47,7 +47,9 @@ public class GrabCog : MonoBehaviour
 
     public void PickUp()
     {
-        
+        if (myCog.isDocked()) {
+            myCog.DockToggle();
+        }
         myCog = cogNearMe;
         myCog.IgnorePlayers(this);
         cogNearMe = null;

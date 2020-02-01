@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 8890077934721167359}
   - component: {fileID: 5421264587714794929}
   - component: {fileID: 711494374435104010}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: CogWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwSpeed: 1000
-  throwHeight: 2
+  throwHeight: 100
   carrier: {fileID: 0}
   myRB: {fileID: 8890077934721167359}
 --- !u!50 &8890077934721167359
@@ -153,7 +153,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

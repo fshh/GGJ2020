@@ -19,8 +19,8 @@ TagManager:
   - Team2
   - Platform
   - Neutral
-  - 
-  - 
+  - Ball1
+  - Ball2
   - 
   - 
   - 
@@ -40,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: WayBack
+    uniqueID: 3172633505
+    locked: 0
+  - name: Background
+    uniqueID: 4243735121
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

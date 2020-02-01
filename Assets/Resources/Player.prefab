@@ -255,7 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxJumpHeight: 3
   minJumpHeight: 0.1
-  bounceVelocityRatio: 0.5
+  bounceVelocityRatio: 0.8
   timeToJumpApex: 0.3
   accelerationTimeAirborne: 0.1
   accelerationTimeGrounded: 0.05

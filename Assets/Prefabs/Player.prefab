@@ -157,6 +157,7 @@ MonoBehaviour:
   maxClimbAngle: 80
   maxDescendAngle: 80
   playerInput: {x: 0, y: 0}
+  ericMode: 0
 --- !u!114 &2145909068683149804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,14 +183,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxJumpHeight: 3
-  minJumpHeight: 0.5
+  minJumpHeight: 0.1
   timeToJumpApex: 0.3
   accelerationTimeAirborne: 0.1
   accelerationTimeGrounded: 0.05
   moveSpeed: 10
-  wallJumpClimb: {x: 10, y: 16}
-  wallJumpOff: {x: 10, y: 16}
-  wallLeap: {x: 10, y: 16}
+  wallJumpClimb: {x: 10, y: 18}
+  wallJumpOff: {x: 10, y: 18}
+  wallLeap: {x: 10, y: 18}
   canDoubleJump: 0
   canWallSlide: 1
   wallSlideSpeedMax: 3

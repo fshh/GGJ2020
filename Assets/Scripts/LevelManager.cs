@@ -37,8 +37,12 @@ public class LevelManager : MonoBehaviour
 
             // Set player layer and collision mask
             player.layer = LayerMask.NameToLayer(ii < numPlayers / 2 ? "Team1" : "Team2");
+
+            // Un-comment to enable collision between teams
+            /* 
             int enemyLayer = 1 << LayerMask.NameToLayer(ii < numPlayers / 2 ? "Team2" : "Team1");
             player.GetComponent<Controller2D>().collisionMask |= enemyLayer;
+            */
         }
     }
 

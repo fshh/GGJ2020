@@ -17,10 +17,12 @@ public class Stompable : MonoBehaviour {
     {
         GameObject enemyPlayer = collision.gameObject;
         PlayerMovement enemyPlayerMovement = enemyPlayer.GetComponent<PlayerMovement>();
-        if (enemyPlayerMovement && enemyPlayerMovement.IsFalling() && enemyPlayer.layer != gameObject.layer)
+        if (enemyPlayerMovement && enemyPlayerMovement.IsFalling() && enemyPlayer.layer != transform.parent.gameObject.layer)
         {
-            stunControl.Stun();
-            enemyPlayerMovement.Bounce();
+            if (stunControl.Stun())
+            {
+                enemyPlayerMovement.Bounce();
+            }
         }
     }
 

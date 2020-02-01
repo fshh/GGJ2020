@@ -7,6 +7,7 @@ public class Stunnable : MonoBehaviour
 {
     public float stunDuration = 1f;
 
+    private bool stunnable = true;
     private PlayerInput input;
     private AudioSource audioSource;
     private Animator anim;
@@ -19,9 +20,19 @@ public class Stunnable : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    public void Stun()
+    public bool Stun()
     {
+        if (!stunnable) { return false; }
         input.DisableMovementForTime(stunDuration);
+        StartCoroutine(DisableStunningForTime(stunDuration));
         // TODO: play stun sound and animation
+        return true;
+    }
+
+    private IEnumerator DisableStunningForTime(float duration)
+    {
+        stunnable = false;
+        yield return new WaitForSecondsRealtime(stunDuration);
+        stunnable = true;
     }
 }

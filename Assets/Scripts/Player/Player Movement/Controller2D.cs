@@ -10,6 +10,7 @@ public class Controller2D : RaycastController
     [HideInInspector]
     public Vector2 playerInput;
 
+    public boolean ericMode = false;
     private Rigidbody2D rb;
 
     public override void Start()
@@ -50,8 +51,11 @@ public class Controller2D : RaycastController
             VerticalCollisions(ref moveAmount);
         }
 
-        //transform.Translate(moveAmount);
-        rb.position += moveAmount;
+        if (!ericMode) {
+            transform.Translate(moveAmount);
+        } else {
+            rb.position += moveAmount;
+        }
 
         if (standingOnPlatform)
         {

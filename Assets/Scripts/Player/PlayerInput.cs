@@ -1,19 +1,35 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using Rewired;
 
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerInput : MonoBehaviour
 {
-    private PlayerMovement player;
+    [System.Serializable]
+    public enum PlayerNumber { ONE = 1, TWO = 2, THREE = 3, FOUR = 4 }
+    public PlayerNumber playerNumber;
+    public TextMeshProUGUI playerNumberText;
+
+    private PlayerMovement movement;
     private bool canJump = true;
     private bool canMove = true;
     public bool canToss;
     public GrabCog grabCog;
     public PlayerInput myTeammate;
 
+    private Player player;
+    private string horizontalInput = "Move Horizontal";
+    private string verticalInput = "Move Vertical";
+    private string jumpInput = "Jump";
+    private string interactInput = "Interact";
+
     private void Start()
     {
-        canToss = false;
-        player = GetComponent<PlayerMovement>();
+        movement = GetComponent<PlayerMovement>();
+        player = ReInput.players.GetPlayer((int)playerNumber - 1);
+        
+        playerNumberText.text = "P " + (int)playerNumber;
     }
 
     private void Update()
@@ -22,22 +38,23 @@ public class PlayerInput : MonoBehaviour
             return;
         }
 
-        if (canMove)
-        {
-            Vector2 directionalInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-            player.SetDirectionalInput(directionalInput);
+        if (canMove) {
+            Vector2 directionalInput = new Vector2(player.GetAxisRaw(horizontalInput), player.GetAxisRaw(verticalInput));
+            movement.SetDirectionalInput(directionalInput);
 
-            if (Input.GetButtonDown("Jump") && canJump)
-            {
-                player.OnJumpInputDown();
+            if (player.GetButtonDown(jumpInput) && canJump) {
+                movement.OnJumpInputDown();
             }
 
-            if (Input.GetButtonUp("Jump") && canJump)
-            {
-                player.OnJumpInputUp();
+            if (player.GetButtonUp(jumpInput) && canJump) {
+                movement.OnJumpInputUp();
             }
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (player.GetButtonDown(interactInput)) {
+                // TODO: interact with cogs
+            }
+
+            if (player.GetKeyDown(KeyCode.E))
             {
                 if (grabCog.cogNearMe != null)
                 {
@@ -58,7 +75,7 @@ public class PlayerInput : MonoBehaviour
     public void DisableMovement()
     {
         canMove = false;
-        player.SetDirectionalInput(Vector2.zero);
+        movement.SetDirectionalInput(Vector2.zero);
     }
 
     public bool CanMove() {

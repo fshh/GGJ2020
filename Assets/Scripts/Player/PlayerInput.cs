@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Rewired;
 
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerInput : MonoBehaviour
@@ -14,24 +15,18 @@ public class PlayerInput : MonoBehaviour
     private bool canJump = true;
     private bool canMove = true;
 
-    private string horizontalInput;
-    private string verticalInput;
-    private string jumpInput;
-    private string dPadHorizontal;
-    private string dPadVertical;
+    private Player player;
+    private string horizontalInput = "Move Horizontal";
+    private string verticalInput = "Move Vertical";
+    private string jumpInput = "Jump";
+    private string interactInput = "Interact";
 
     private void Start()
     {
         movement = GetComponent<PlayerMovement>();
+        player = ReInput.players.GetPlayer((int)playerNumber - 1);
         
-        int pnum = (int)playerNumber;
-        horizontalInput = "Horizontal_P" + pnum;
-        verticalInput = "Vertical_P" + pnum;
-        jumpInput = "Jump_P" + pnum;
-        dPadHorizontal = "DPadHorizontal_P" + pnum;
-        dPadVertical = "DPadVertical_P" + pnum;
-
-        playerNumberText.text = "P " + pnum;
+        playerNumberText.text = "P " + (int)playerNumber;
     }
 
     private void Update()
@@ -40,19 +35,20 @@ public class PlayerInput : MonoBehaviour
             return;
         }
 
-        if (canMove)
-        {
-            Vector2 directionalInput = new Vector2(Input.GetAxisRaw(horizontalInput), Input.GetAxisRaw(verticalInput));
+        if (canMove) {
+            Vector2 directionalInput = new Vector2(player.GetAxisRaw(horizontalInput), player.GetAxisRaw(verticalInput));
             movement.SetDirectionalInput(directionalInput);
 
-            if (Input.GetButtonDown(jumpInput) && canJump)
-            {
+            if (player.GetButtonDown(jumpInput) && canJump) {
                 movement.OnJumpInputDown();
             }
 
-            if (Input.GetButtonUp(jumpInput) && canJump)
-            {
+            if (player.GetButtonUp(jumpInput) && canJump) {
                 movement.OnJumpInputUp();
+            }
+
+            if (player.GetButtonDown(interactInput)) {
+                // TODO: interact with cogs
             }
         }
     }

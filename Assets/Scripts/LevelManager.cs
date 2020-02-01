@@ -10,14 +10,15 @@ public class LevelManager : MonoBehaviour
 
     void OnEnable()
     {
-        //numPlayers = GameSettings.NumberOfPlayers;
         SpawnPlayers();
     }
 
     private void Update() {
+#if UNITY_EDITOR
         if (Input.GetButtonDown("Restart")) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+#endif
     }
 
     private void SpawnPlayers()

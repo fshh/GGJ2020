@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9162498529439345237}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1234606733593483869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.102992535, y: -1.9650736, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
   maxClimbAngle: 80
   maxDescendAngle: 80
   playerInput: {x: 0, y: 0}
-  ericMode: 0
+  ericMode: 1
 --- !u!114 &2145909068683149804
 MonoBehaviour:
   m_ObjectHideFlags: 0

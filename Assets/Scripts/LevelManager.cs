@@ -24,7 +24,8 @@ public class LevelManager : MonoBehaviour
     private void SpawnPlayers()
     {
         Transform spawns = GameObject.Find("SpawnPoints").transform;
-        GameObject playerPrefab = Resources.Load<GameObject>("Player");
+        // CHANGE BACK TO DEFAULT PLAYER PREFAB AFTER TESTING
+        GameObject playerPrefab = Resources.Load<GameObject>("PlayerThrowCog");
         for (int ii = 0; ii < numPlayers; ii++)
         {
             // Instantiate player

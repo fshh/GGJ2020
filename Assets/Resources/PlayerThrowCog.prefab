@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCog: {fileID: 0}
-  heldCogPosit: {fileID: 0}
+  heldCogPosit: {fileID: 7365896711080914425}
   cogNearMe: {fileID: 0}
   myTeamMate: {fileID: 0}
 --- !u!1001 &8110309123275091308
@@ -112,6 +112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002424860423833229, guid: 116e3ffa0d78f46a3b42f03e36b59322,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 116e3ffa0d78f46a3b42f03e36b59322, type: 3}

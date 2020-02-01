@@ -6,9 +6,13 @@ public class PlayerInput : MonoBehaviour
     private PlayerMovement player;
     private bool canJump = true;
     private bool canMove = true;
+    public bool canToss;
+    public GrabCog grabCog;
+    public PlayerInput myTeammate;
 
     private void Start()
     {
+        canToss = false;
         player = GetComponent<PlayerMovement>();
     }
 
@@ -32,6 +36,18 @@ public class PlayerInput : MonoBehaviour
             {
                 player.OnJumpInputUp();
             }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (grabCog.cogNearMe != null)
+                {
+                    grabCog.PickUp();
+                }
+                else if(grabCog.myCog != null)
+                {
+                    grabCog.ThrowCog();
+                }
+            }
         }
     }
 
@@ -48,4 +64,6 @@ public class PlayerInput : MonoBehaviour
     public bool CanMove() {
         return canMove;
     }
+
+ 
 }

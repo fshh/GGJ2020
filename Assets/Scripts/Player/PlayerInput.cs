@@ -50,11 +50,7 @@ public class PlayerInput : MonoBehaviour
                 movement.OnJumpInputUp();
             }
 
-            if (player.GetButtonDown(interactInput)) {
-                // TODO: interact with cogs
-            }
-
-            if (player.GetKeyDown(KeyCode.E))
+            if (player.GetButtonDown(interactInput))
             {
                 if (grabCog.cogNearMe != null)
                 {

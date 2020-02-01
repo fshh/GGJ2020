@@ -16,7 +16,7 @@ public class PlayerInput : MonoBehaviour
     private bool canJump = true;
     private bool canMove = true;
     public bool canToss;
-    public GrabCog grabCog;
+    private GrabCog grabCog;
     public PlayerInput myTeammate;
 
     private Player player;
@@ -29,7 +29,7 @@ public class PlayerInput : MonoBehaviour
     {
         movement = GetComponent<PlayerMovement>();
         player = ReInput.players.GetPlayer((int)playerNumber - 1);
-        
+        grabCog = GetComponent<GrabCog>();
         playerNumberText.text = "P " + (int)playerNumber;
     }
 
@@ -43,6 +43,19 @@ public class PlayerInput : MonoBehaviour
             Vector2 directionalInput = new Vector2(player.GetAxisRaw(horizontalInput), player.GetAxisRaw(verticalInput));
             movement.SetDirectionalInput(directionalInput);
 
+            if (player.GetButtonDown(interactInput))
+            {
+                Debug.Log("press");
+                if (grabCog.cogNearMe != null)
+                {
+                    grabCog.PickUp();
+                }
+                else if (grabCog.myCog != null)
+                {
+                    grabCog.ThrowCog();
+                }
+            }
+
             if (player.GetButtonDown(jumpInput) && canJump) {
                 movement.OnJumpInputDown();
             }
@@ -51,17 +64,7 @@ public class PlayerInput : MonoBehaviour
                 movement.OnJumpInputUp();
             }
 
-            if (player.GetButtonDown(interactInput))
-            {
-                if (grabCog.cogNearMe != null)
-                {
-                    grabCog.PickUp();
-                }
-                else if(grabCog.myCog != null)
-                {
-                    grabCog.ThrowCog();
-                }
-            }
+           
         }
     }
 

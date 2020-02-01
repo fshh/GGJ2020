@@ -11,7 +11,7 @@ public class PlayerColorManager : MonoBehaviour
 
     // Sets the colors of the given player object to the colors associated with the given player number
     public void SetColors(GameObject player, int pNum) {
-        SpriteRenderer bodySprite = player.GetComponent<SpriteRenderer>();
+        SpriteRenderer bodySprite = player.GetComponentInChildren<SpriteRenderer>();
         TextMeshProUGUI[] texts = player.GetComponentsInChildren<TextMeshProUGUI>();
 
         Color col = pNum <= 2 ? Team1 : Team2;

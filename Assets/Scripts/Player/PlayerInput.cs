@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Rewired;
@@ -50,11 +51,7 @@ public class PlayerInput : MonoBehaviour
                 movement.OnJumpInputUp();
             }
 
-            if (player.GetButtonDown(interactInput)) {
-                // TODO: interact with cogs
-            }
-
-            /*if (player.GetKeyDown(KeyCode.E))
+            if (player.GetButtonDown(interactInput))
             {
                 if (grabCog.cogNearMe != null)
                 {
@@ -64,7 +61,7 @@ public class PlayerInput : MonoBehaviour
                 {
                     grabCog.ThrowCog();
                 }
-            }*/
+            }
         }
     }
 
@@ -76,6 +73,23 @@ public class PlayerInput : MonoBehaviour
     {
         canMove = false;
         movement.SetDirectionalInput(Vector2.zero);
+    }
+
+    public void DisableMovementForTime(float duration)
+    {
+        StartCoroutine(DisableMovementRoutine(duration));
+    }
+
+    private IEnumerator DisableMovementRoutine(float duration)
+    {
+        DisableMovement();
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        canMove = true;
     }
 
     public bool CanMove() {

@@ -11,20 +11,35 @@ public class CogWheel : MonoBehaviour
     public float throwHeight;
     public GrabCog carrier;
     public Rigidbody2D myRB;
+    //public Team team
 
 
     public void Start()
     {
-       
+
         //Physics.IgnoreCollision(GetComponent<Collider>(), agressor.myTeammate.GetComponent<Collider>());
         myRB = GetComponent<Rigidbody2D>();
     }
 
     public void Update()
     {
-        if(myRB.velocity.x <= 1)
+        
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<Machine>())
         {
-            ResetIgnore();
+            //check if this machine belongs to the thrower
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.layer == 9)
+        {
+            //it has hit a wall or something else
+            gameObject.layer = 10;
         }
     }
 
@@ -36,13 +51,14 @@ public class CogWheel : MonoBehaviour
 
     public void IgnorePlayers(GrabCog thrower)
     {
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), thrower.GetComponent<Collider2D>());
-        //Physics2D.IgnoreCollision(GetComponent<Collider2D>(), thrower.myTeamMate.GetComponent<Collider2D>());
+        gameObject.layer = thrower.gameObject.layer;
+        
+        
     }
 
     public void ResetIgnore()
     {
-      
+        gameObject.layer = 0;
     }
 
 }

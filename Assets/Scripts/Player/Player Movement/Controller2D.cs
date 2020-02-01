@@ -10,7 +10,7 @@ public class Controller2D : RaycastController
     [HideInInspector]
     public Vector2 playerInput;
 
-    public boolean ericMode = false;
+    public bool ericMode = false;
     private Rigidbody2D rb;
 
     public override void Start()

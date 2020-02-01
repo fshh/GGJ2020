@@ -1,15 +1,37 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerInput : MonoBehaviour
 {
-    private PlayerMovement player;
+    [System.Serializable]
+    public enum PlayerNumber { ONE = 1, TWO = 2, THREE = 3, FOUR = 4 }
+    public PlayerNumber playerNumber;
+    public TextMeshProUGUI playerNumberText;
+
+    private PlayerMovement movement;
     private bool canJump = true;
     private bool canMove = true;
 
+    private string horizontalInput;
+    private string verticalInput;
+    private string jumpInput;
+    private string dPadHorizontal;
+    private string dPadVertical;
+
     private void Start()
     {
-        player = GetComponent<PlayerMovement>();
+        movement = GetComponent<PlayerMovement>();
+        
+        int pnum = (int)playerNumber;
+        horizontalInput = "Horizontal_P" + pnum;
+        verticalInput = "Vertical_P" + pnum;
+        jumpInput = "Jump_P" + pnum;
+        dPadHorizontal = "DPadHorizontal_P" + pnum;
+        dPadVertical = "DPadVertical_P" + pnum;
+
+        playerNumberText.text = "P " + pnum;
     }
 
     private void Update()
@@ -20,17 +42,17 @@ public class PlayerInput : MonoBehaviour
 
         if (canMove)
         {
-            Vector2 directionalInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-            player.SetDirectionalInput(directionalInput);
+            Vector2 directionalInput = new Vector2(Input.GetAxisRaw(horizontalInput), Input.GetAxisRaw(verticalInput));
+            movement.SetDirectionalInput(directionalInput);
 
-            if (Input.GetButtonDown("Jump") && canJump)
+            if (Input.GetButtonDown(jumpInput) && canJump)
             {
-                player.OnJumpInputDown();
+                movement.OnJumpInputDown();
             }
 
-            if (Input.GetButtonUp("Jump") && canJump)
+            if (Input.GetButtonUp(jumpInput) && canJump)
             {
-                player.OnJumpInputUp();
+                movement.OnJumpInputUp();
             }
         }
     }
@@ -42,7 +64,7 @@ public class PlayerInput : MonoBehaviour
     public void DisableMovement()
     {
         canMove = false;
-        player.SetDirectionalInput(Vector2.zero);
+        movement.SetDirectionalInput(Vector2.zero);
     }
 
     public bool CanMove() {

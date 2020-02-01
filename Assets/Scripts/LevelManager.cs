@@ -27,10 +27,22 @@ public class LevelManager : MonoBehaviour
         GameObject playerPrefab = Resources.Load<GameObject>("Player");
         for (int ii = 0; ii < numPlayers; ii++)
         {
+            // Instantiate player
             GameObject player = Instantiate(playerPrefab, spawns.GetChild(ii).transform.position, Quaternion.identity);
+
+            // Set player name, number, and colors
             player.name = "Player " + (ii + 1);
             player.GetComponent<PlayerInput>().playerNumber = (PlayerInput.PlayerNumber)(ii + 1);
             colorManager.SetColors(player, ii + 1);
+
+            // Set player layer and collision mask
+            player.layer = LayerMask.NameToLayer(ii < numPlayers / 2 ? "Team1" : "Team2");
+
+            // Un-comment to enable collision between teams
+            /* 
+            int enemyLayer = 1 << LayerMask.NameToLayer(ii < numPlayers / 2 ? "Team2" : "Team1");
+            player.GetComponent<Controller2D>().collisionMask |= enemyLayer;
+            */
         }
     }
 

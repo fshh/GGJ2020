@@ -192,6 +192,11 @@ public class PlayerMovement : MonoBehaviour
         return controller.collisions.below;
     }
 
+    public bool IsFalling()
+    {
+        return velocity.y < 0f;
+    }
+
     public void Die() {
         PlayerInput input = GetComponent<PlayerInput>();
         input.DisableMovement();

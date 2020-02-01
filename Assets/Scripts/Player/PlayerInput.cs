@@ -29,25 +29,29 @@ public class PlayerInput : MonoBehaviour
     {
         movement = GetComponent<PlayerMovement>();
         player = ReInput.players.GetPlayer((int)playerNumber - 1);
-        
+
         playerNumberText.text = "P " + (int)playerNumber;
     }
 
     private void Update()
     {
-        if (Time.timeScale == 0f) {
+        if (Time.timeScale == 0f)
+        {
             return;
         }
 
-        if (canMove) {
+        if (canMove)
+        {
             Vector2 directionalInput = new Vector2(player.GetAxisRaw(horizontalInput), player.GetAxisRaw(verticalInput));
             movement.SetDirectionalInput(directionalInput);
 
-            if (player.GetButtonDown(jumpInput) && canJump) {
+            if (player.GetButtonDown(jumpInput) && canJump)
+            {
                 movement.OnJumpInputDown();
             }
 
-            if (player.GetButtonUp(jumpInput) && canJump) {
+            if (player.GetButtonUp(jumpInput) && canJump)
+            {
                 movement.OnJumpInputUp();
             }
 
@@ -57,7 +61,7 @@ public class PlayerInput : MonoBehaviour
                 {
                     grabCog.PickUp();
                 }
-                else if(grabCog.myCog != null)
+                else if (grabCog.myCog != null)
                 {
                     grabCog.ThrowCog();
                 }
@@ -65,7 +69,8 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
-    public void DisableJump() {
+    public void DisableJump()
+    {
         canJump = false;
     }
 
@@ -92,9 +97,10 @@ public class PlayerInput : MonoBehaviour
         canMove = true;
     }
 
-    public bool CanMove() {
+    public bool CanMove()
+    {
         return canMove;
     }
 
- 
+
 }

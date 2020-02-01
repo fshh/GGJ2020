@@ -49,8 +49,9 @@ public class GrabCog : MonoBehaviour
     {
         
         myCog = cogNearMe;
+        myCog.IgnorePlayers(this);
         cogNearMe = null;
-        myCog.transform.parent = transform;
+        myCog.transform.parent = heldCogPosit;
         myCog.transform.position = heldCogPosit.position;
         myCog.myRB.bodyType = RigidbodyType2D.Kinematic;
         myCog.GetComponent<Collider2D>().enabled = false;
@@ -63,7 +64,6 @@ public class GrabCog : MonoBehaviour
         myCog.myRB.bodyType = RigidbodyType2D.Dynamic;
         myCog.GetComponent<Collider2D>().enabled = true;
         //set the physics to ignore this player's teammate
-        myCog.IgnorePlayers(this);
         //throw the sucker
         myCog.myRB.AddForce(new Vector2(myCog.throwSpeed, myCog.throwHeight));
         myCog = null;

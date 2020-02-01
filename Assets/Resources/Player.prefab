@@ -172,6 +172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a858d8c5574bc43439ca16f9bd1731a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNumber: 1
+  playerNumberText: {fileID: 0}
   canToss: 0
   grabCog: {fileID: 800398066134414367}
   myTeammate: {fileID: 0}
@@ -217,6 +219,7 @@ MonoBehaviour:
   myCog: {fileID: 0}
   heldCogPosit: {fileID: 2299244678276584675}
   cogNearMe: {fileID: 0}
+  myTeamMate: {fileID: 0}
 --- !u!1 &2619558675944685436
 GameObject:
   m_ObjectHideFlags: 0

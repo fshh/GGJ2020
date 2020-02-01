@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 8890077934721167359}
   - component: {fileID: 5421264587714794929}
   - component: {fileID: 711494374435104010}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CogWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

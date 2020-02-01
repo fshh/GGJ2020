@@ -237,6 +237,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNumber: 0
   playerNumberText: {fileID: 6629702350529814015}
+  canToss: 0
+  grabCog: {fileID: 0}
+  myTeammate: {fileID: 0}
 --- !u!114 &9162498529439345237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3678704784755982267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.88, z: 0}
+  m_LocalPosition: {x: 0, y: 0.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1241479329471941812}
@@ -556,7 +559,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.25}
+  m_Size: {x: 0.7, y: 0.2}
   m_EdgeRadius: 0
 --- !u!114 &3769694262359057419
 MonoBehaviour:

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Rewired;
 public class PauseController : MonoBehaviour
 {
     private bool paused;
@@ -12,14 +12,6 @@ public class PauseController : MonoBehaviour
     void Start()
     {
         paused = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(pauseButton)) {
-            togglePause();
-        }
     }
 
     public void togglePause() {

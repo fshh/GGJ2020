@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 9162498529439345237}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,9 +130,8 @@ Transform:
   m_GameObject: {fileID: 1234606733593483869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.102992535, y: -1.9650736, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7617397031594607015}
+  m_LocalScale: {x: 0.75, y: 1.5, z: 1}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -257,6 +256,7 @@ MonoBehaviour:
   maxClimbAngle: 80
   maxDescendAngle: 80
   playerInput: {x: 0, y: 0}
+  ericMode: 1
 --- !u!114 &2145909068683149804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,8 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a858d8c5574bc43439ca16f9bd1731a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 0
-  playerNumberText: {fileID: 6629702350529814015}
 --- !u!114 &9162498529439345237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,15 +281,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43eca9b50423e40f2ad20a6ac3436ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxJumpHeight: 4
-  minJumpHeight: 0.5
-  timeToJumpApex: 0.4
+  maxJumpHeight: 3
+  minJumpHeight: 0.1
+  timeToJumpApex: 0.3
   accelerationTimeAirborne: 0.1
   accelerationTimeGrounded: 0.05
   moveSpeed: 10
-  wallJumpClimb: {x: 7.5, y: 16}
-  wallJumpOff: {x: 8.5, y: 7}
-  wallLeap: {x: 18, y: 17}
+  wallJumpClimb: {x: 10, y: 18}
+  wallJumpOff: {x: 10, y: 18}
+  wallLeap: {x: 10, y: 18}
   canDoubleJump: 0
   canWallSlide: 1
   wallSlideSpeedMax: 3

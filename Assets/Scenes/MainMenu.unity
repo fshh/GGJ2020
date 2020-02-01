@@ -277,6 +277,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2803462056097816, guid: 2f26a55b1b12eaa458abac89ce572db9, type: 3}
+      propertyPath: m_fontSize
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803462056097816, guid: 2f26a55b1b12eaa458abac89ce572db9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 140
+      objectReference: {fileID: 0}
     - target: {fileID: 582747875687005798, guid: 2f26a55b1b12eaa458abac89ce572db9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -386,6 +394,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646516521898994801, guid: 2f26a55b1b12eaa458abac89ce572db9,
+        type: 3}
+      propertyPath: scene
+      value: TeamSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114762981491127771, guid: 2f26a55b1b12eaa458abac89ce572db9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNewScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217245104248657268, guid: 2f26a55b1b12eaa458abac89ce572db9,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217245104248657268, guid: 2f26a55b1b12eaa458abac89ce572db9,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 140
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f26a55b1b12eaa458abac89ce572db9, type: 3}

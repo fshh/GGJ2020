@@ -14,6 +14,9 @@ public class PlayerInput : MonoBehaviour
     private PlayerMovement movement;
     private bool canJump = true;
     private bool canMove = true;
+    public bool canToss;
+    public GrabCog grabCog;
+    public PlayerInput myTeammate;
 
     private Player player;
     private string horizontalInput = "Move Horizontal";
@@ -50,6 +53,18 @@ public class PlayerInput : MonoBehaviour
             if (player.GetButtonDown(interactInput)) {
                 // TODO: interact with cogs
             }
+
+            if (player.GetKeyDown(KeyCode.E))
+            {
+                if (grabCog.cogNearMe != null)
+                {
+                    grabCog.PickUp();
+                }
+                else if(grabCog.myCog != null)
+                {
+                    grabCog.ThrowCog();
+                }
+            }
         }
     }
 
@@ -66,4 +81,6 @@ public class PlayerInput : MonoBehaviour
     public bool CanMove() {
         return canMove;
     }
+
+ 
 }

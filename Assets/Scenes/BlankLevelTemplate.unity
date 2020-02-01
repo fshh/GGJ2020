@@ -728,7 +728,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530198906}
   m_Enabled: 1
-  m_CellSize: {x: 0.5, y: 0.5, z: 0.5}
+  m_CellSize: {x: 1, y: 1, z: 1}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -3125,6 +3125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fallingThroughPlatformResetTimer
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667467570935709837, guid: 116e3ffa0d78f46a3b42f03e36b59322,
+        type: 3}
+      propertyPath: ericMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 116e3ffa0d78f46a3b42f03e36b59322, type: 3}

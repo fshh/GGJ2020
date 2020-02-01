@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float maxJumpHeight = 4f;
     public float minJumpHeight = 1f;
+    public float bounceVelocityRatio = 0.5f;
     public float timeToJumpApex = .4f;
     public float accelerationTimeAirborne = .2f;
     public float accelerationTimeGrounded = .1f;
@@ -174,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Bounce() {
         bouncing = true;
-        velocity.y = maxJumpVelocity;
+        velocity.y = maxJumpVelocity * bounceVelocityRatio;
         //anim.SetInteger("animationState", 2);
         StartCoroutine(BounceRoutine());
     }

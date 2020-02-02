@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &582747873844150549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3503058589498517998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 481ef24eb6e6b974cb0e6e7044722958, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &582747875203691707
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +196,7 @@ GameObject:
   - component: {fileID: 582747875687005796}
   - component: {fileID: 582747875687005797}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MainMenuUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,6 +296,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c762ffe0309c804c9c5ca5db7f35870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: GameSetup
+--- !u!114 &582747873844150549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3503058589498517998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481ef24eb6e6b974cb0e6e7044722958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &582747873844150552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -355,12 +356,12 @@ PrefabInstance:
     - target: {fileID: 585366389840607488, guid: 61ca5195cceae024e985fc73d12f84ce,
         type: 3}
       propertyPath: m_fontSize
-      value: 200
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 585366389840607488, guid: 61ca5195cceae024e985fc73d12f84ce,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 200
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1117891806985279919, guid: 61ca5195cceae024e985fc73d12f84ce,
         type: 3}
@@ -548,12 +549,12 @@ PrefabInstance:
     - target: {fileID: 585366389840607488, guid: 61ca5195cceae024e985fc73d12f84ce,
         type: 3}
       propertyPath: m_fontSize
-      value: 200
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 585366389840607488, guid: 61ca5195cceae024e985fc73d12f84ce,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 200
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1117891806985279919, guid: 61ca5195cceae024e985fc73d12f84ce,
         type: 3}
@@ -578,7 +579,7 @@ PrefabInstance:
     - target: {fileID: 1117891806985279919, guid: 61ca5195cceae024e985fc73d12f84ce,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadTeamSelect
+      value: LoadNewScene
       objectReference: {fileID: 0}
     - target: {fileID: 1117891806985279919, guid: 61ca5195cceae024e985fc73d12f84ce,
         type: 3}

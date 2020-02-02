@@ -43,7 +43,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 77d0bec002ca1a49bf77fe57a2a79a21
     GuidInternal: 
-    m_lastTime: -8586209444104775808
+    m_lastTime: -8586209316174775808
     List:
     - name: Fight_Song_Bank
       guid: b15bb46905bcb142bfa220416a64ffa9
@@ -65,7 +65,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: dcce6f1183573f46a2e0297f8fc94a91
     GuidInternal: 
-    m_lastTime: -8586209386234775808
+    m_lastTime: -8586209316184775808
     List:
     - name: Rock_Solo_Win
       guid: 9c85f0f68d47ea47acd97d65c4269cbc
@@ -79,6 +79,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Set_State_Menu
+      guid: 99b1b58713a2684caf0281528c5157b5
+      id: 2302270969
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_State_Menu
+        ObjectType: 3
+      Path: Default Work Unit/Set_State_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Set_State_Rock_Winning
       guid: 40875ca077cfe04797b3f8a15044078f
       id: 1928154282
@@ -100,6 +112,138 @@ MonoBehaviour:
       - ElementName: Set_State_SynthWinning
         ObjectType: 3
       Path: Default Work Unit/Set_State_SynthWinning
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_ENV_GearPlacedinTerminal
+      guid: 86fa6d1e8371204a96ba1ba1f9ccf8a7
+      id: 108731474
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_ENV_GearPlacedinTerminal
+        ObjectType: 3
+      Path: Default Work Unit/SFX_ENV_GearPlacedinTerminal
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_ENV_GearTakenFromTerminal
+      guid: d2766282eae5a548a6abe383e1c05828
+      id: 2998025893
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_ENV_GearTakenFromTerminal
+        ObjectType: 3
+      Path: Default Work Unit/SFX_ENV_GearTakenFromTerminal
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_PL_Jump
+      guid: 42a31359e8eccc4a98acd5d98605f211
+      id: 3862627584
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_PL_Jump
+        ObjectType: 3
+      Path: Default Work Unit/SFX_PL_Jump
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_PL_PickupGear
+      guid: 788ecf6169e04f4fb7ee0705947a0dd4
+      id: 1716799481
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_PL_PickupGear
+        ObjectType: 3
+      Path: Default Work Unit/SFX_PL_PickupGear
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_PL_Stunned
+      guid: 63cf8b0273e0da43bda253d4819cb399
+      id: 1921722885
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_PL_Stunned
+        ObjectType: 3
+      Path: Default Work Unit/SFX_PL_Stunned
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_ThrowGear
+      guid: 25b98d49355b1d429d7ae3c5cabf4193
+      id: 1462566446
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_ThrowGear
+        ObjectType: 3
+      Path: Default Work Unit/SFX_ThrowGear
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_UI_BigConfirm
+      guid: 92d6e03bf8c62d4cbc6778580b44dee8
+      id: 4191505424
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_BigConfirm
+        ObjectType: 3
+      Path: Default Work Unit/SFX_UI_BigConfirm
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_UI_CancelBack
+      guid: 15e8ad7f9955b24bb09b211696e8d43d
+      id: 602621829
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_CancelBack
+        ObjectType: 3
+      Path: Default Work Unit/SFX_UI_CancelBack
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_UI_Confirm
+      guid: c4ceeccf4a97c245908e7770dd3cf1f7
+      id: 3923242682
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_Confirm
+        ObjectType: 3
+      Path: Default Work Unit/SFX_UI_Confirm
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_UI_Error
+      guid: 576efd324f19834c9da30689a182e71e
+      id: 212306872
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_Error
+        ObjectType: 3
+      Path: Default Work Unit/SFX_UI_Error
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SFX_UI_Movement
+      guid: 3094059592f43344bbd9f1b22a9a8ab3
+      id: 703026709
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_Movement
+        ObjectType: 3
+      Path: Default Work Unit/SFX_UI_Movement
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -145,7 +289,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: c1c1f494f5e5884aa65a35eb0f8b4e3e
     GuidInternal: 
-    m_lastTime: -8586209485414775808
+    m_lastTime: -8586209337154775808
     List:
     - name: Gameplay
       guid: 855626a77538264c84bb450898a5da9f
@@ -157,6 +301,12 @@ MonoBehaviour:
         ObjectType: 9
       Path: Default Work Unit/Gameplay
       values:
+      - name: Menu_State
+        guid: 7120b6d2434a204fbcab94e6669238f7
+        id: 3941853002
+        PathAndIcons:
+        - ElementName: Menu_State
+          ObjectType: 8
       - name: Neutral_State
         guid: 3b2f3acd66c6c148ab1082e7adbc58d5
         id: 2379433868
@@ -220,11 +370,111 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 33517384aab0d341b0feb1e1adea3e76
     GuidInternal: 
-    m_lastTime: -8586209980534775808
-    List: []
+    m_lastTime: -8586209316174775808
+    List:
+    - name: SFX_ENV_GearPlacedinTerminal
+      guid: 330aa74aeb341e4d996c4d7907f56e02
+      id: 108731474
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_ENV_GearPlacedinTerminal
+        ObjectType: 14
+      Path: Default Work Unit/SFX_ENV_GearPlacedinTerminal
+    - name: SFX_ENV_GearTakenFromTerminal
+      guid: 32b40ba5602e4c49b10be25490f2573f
+      id: 2998025893
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_ENV_GearTakenFromTerminal
+        ObjectType: 14
+      Path: Default Work Unit/SFX_ENV_GearTakenFromTerminal
+    - name: SFX_PL_Jump
+      guid: 7e181ddc97a70042b68b61f96795647f
+      id: 3862627584
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_PL_Jump
+        ObjectType: 14
+      Path: Default Work Unit/SFX_PL_Jump
+    - name: SFX_PL_PickupGear
+      guid: c2effe5eda7f654fa206f99b9e2998a5
+      id: 1716799481
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_PL_PickupGear
+        ObjectType: 14
+      Path: Default Work Unit/SFX_PL_PickupGear
+    - name: SFX_PL_Stunned
+      guid: 90095b4ef66840468a705dee18c5e9ad
+      id: 1921722885
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_PL_Stunned
+        ObjectType: 14
+      Path: Default Work Unit/SFX_PL_Stunned
+    - name: SFX_PL_ThrowGear
+      guid: 803c23e8f4cff44aab76b52651880ac8
+      id: 290373701
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_PL_ThrowGear
+        ObjectType: 14
+      Path: Default Work Unit/SFX_PL_ThrowGear
+    - name: SFX_UI_BigConfirm
+      guid: e134a626c325a847add557737c50ba98
+      id: 4191505424
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_BigConfirm
+        ObjectType: 14
+      Path: Default Work Unit/SFX_UI_BigConfirm
+    - name: SFX_UI_CancelBack
+      guid: 00975fad6cd582478f401db4942fc464
+      id: 602621829
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_CancelBack
+        ObjectType: 14
+      Path: Default Work Unit/SFX_UI_CancelBack
+    - name: SFX_UI_Confirm
+      guid: a35f2c7f1b99894aab0928e437fbe70a
+      id: 3923242682
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_Confirm
+        ObjectType: 14
+      Path: Default Work Unit/SFX_UI_Confirm
+    - name: SFX_UI_Error
+      guid: 7b008bbbc45f62428dc1d42a4122c4c3
+      id: 212306872
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_Error
+        ObjectType: 14
+      Path: Default Work Unit/SFX_UI_Error
+    - name: SFX_UI_Movement
+      guid: 1687b75f8af65847ae98683dc9836bd8
+      id: 703026709
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_UI_Movement
+        ObjectType: 14
+      Path: Default Work Unit/SFX_UI_Movement
   ExpandedItems:
   - /GGJ2020_WwiseProject
   - /GGJ2020_WwiseProject/Events
+  - /GGJ2020_WwiseProject/Events/Default Work Unit
   - /GGJ2020_WwiseProject/SoundBanks
   - /GGJ2020_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1

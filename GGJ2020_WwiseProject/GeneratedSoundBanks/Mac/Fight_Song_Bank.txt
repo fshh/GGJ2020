@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	153336822	Set_State_SynthWinning			\Default Work Unit\Set_State_SynthWinning	
 	887288815	Rock_Solo_Win			\Default Work Unit\Rock_Solo_Win	
 	1928154282	Set_State_Rock_Winning			\Default Work Unit\Set_State_Rock_Winning	
+	2302270969	Set_State_Menu			\Default Work Unit\Set_State_Menu	
 	2830440394	Synth_Solo_Win			\Default Work Unit\Synth_Solo_Win	
 	3576058218	Start_Gameplay			\Default Work Unit\Start_Gameplay	
 
@@ -17,12 +18,36 @@ State	ID	Name	State Group			Notes
 	3941853002	Menu_State	Gameplay			
 	4010060711	Synth_Solo_State	Gameplay			
 
+Trigger	ID	Name			Wwise Object Path	Notes
+	108731474	SFX_ENV_GearPlacedinTerminal			\Default Work Unit\SFX_ENV_GearPlacedinTerminal	
+	212306872	SFX_UI_Error			\Default Work Unit\SFX_UI_Error	
+	290373701	SFX_PL_ThrowGear			\Default Work Unit\SFX_PL_ThrowGear	
+	602621829	SFX_UI_CancelBack			\Default Work Unit\SFX_UI_CancelBack	
+	703026709	SFX_UI_Movement			\Default Work Unit\SFX_UI_Movement	
+	1716799481	SFX_PL_PickupGear			\Default Work Unit\SFX_PL_PickupGear	
+	1921722885	SFX_PL_Stunned			\Default Work Unit\SFX_PL_Stunned	
+	2998025893	SFX_ENV_GearTakenFromTerminal			\Default Work Unit\SFX_ENV_GearTakenFromTerminal	
+	3862627584	SFX_PL_Jump			\Default Work Unit\SFX_PL_Jump	
+	3923242682	SFX_UI_Confirm			\Default Work Unit\SFX_UI_Confirm	
+	4191505424	SFX_UI_BigConfirm			\Default Work Unit\SFX_UI_BigConfirm	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	89201798	SFX_UI_CancelBack	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_UI_CancelBack_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_UI_CancelBack\SFX_UI_CancelBack		212180
 	107542522	Rock_Gameplay	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Rock_Gameplay_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Rock_Playlist\Rock_Gameplay\Rock_Gameplay		9754224
+	160010879	SFX_UI_Confirm	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_UI_Confirm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_UI_Confirm\SFX_UI_Confirm		240672
 	171553015	FightSong_Menu	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\FightSong_Menu_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Menu_Music\FightSong_Menu\FightSong_Menu		9754228
+	175759163	SFX_ENV_GearTakenFromTerminal	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_ENV_GearTakenFromTerminal_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_ENV_GearTakenFromTerminal\SFX_ENV_GearTakenFromTerminal		1072828
 	370314013	Synth_Gameplay	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Synth_Gameplay_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Synth_Playlist\Synth_Gameplay\Synth_Gameplay		9754224
+	424904527	SFX_PL_Jump	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_PL_Jump_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_PL_Jump\SFX_PL_Jump		187312
+	503255729	SFX_UI_Movement	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_UI_Movement_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_UI_Movement\SFX_UI_Movement		23232
+	505511322	SFX_PL_Stunned	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_PL_Stunned_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_PL_Stunned\SFX_PL_Stunned		148788
+	556597013	SFX_ENV_GearPlacedinTerminal	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_ENV_GearPlacedinTerminal_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_ENV_GearPlacedinTerminal\SFX_ENV_GearPlacedinTerminal		552052
+	686443326	SFX_UI_Error	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_UI_Error_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_UI_Error\SFX_UI_Error		269720
+	726843354	SFX_PL_PickupGear	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_PL_PickupGear_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_PL_PickupGear\SFX_PL_PickupGear		90824
 	732286844	Neutral_Gameplay	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Neutral_Gameplay_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Neutral_Playlist\Neutral_Gameplay\Neutral_Gameplay		10090576
 	734555033	Crowd_Roar	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Crowd_Roar_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Rock_Solo\Crowd_Roar		850906
+	944124372	SFX_UI_BigConfirm	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_UI_BigConfirm_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_UI_BigConfirm\SFX_UI_BigConfirm		490472
 	973698791	Synth_Solo	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Synth_Solo_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Synth_Solo\Synth_Solo		1681816
+	997598840	SFX_PL_ThrowGear	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\SFX_PL_ThrowGear_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\SFX_PL_ThrowGear\SFX_PL_ThrowGear		64220
 	1036935377	Rock_Solo	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Rock_Solo_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Rock_Solo\Rock_Solo		1681816
 

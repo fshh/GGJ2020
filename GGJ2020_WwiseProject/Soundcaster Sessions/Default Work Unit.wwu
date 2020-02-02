@@ -10,25 +10,73 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="SFX_ThrowGear" ID="{498DB925-5B35-421D-9D7A-E3C5CABF4193}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Rock_Solo_Win" ID="{F6F0859C-478D-47EA-ACD9-7D65C4269CBC}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_UI_CancelBack" ID="{7FADE815-5599-4BB2-B09B-211696E8D43D}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_ENV_GearTakenFromTerminal" ID="{826276D2-E5EA-48A5-A6AB-E383E1C05828}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_UI_BigConfirm" ID="{3BE0D692-C6F8-4C2D-BC67-78580B44DEE8}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Set_State_Rock_Winning" ID="{A05C8740-CF77-47E0-97B3-F8A15044078F}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Set_State_Menu" ID="{87B5B199-A213-4C68-AF02-81528C5157B5}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_PL_Jump" ID="{5913A342-ECE8-4ACC-98AC-D5D98605F211}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Start_Gameplay" ID="{812012EF-95E7-4895-AA11-B49247399810}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
 							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Rock_Winning" ID="{A05C8740-CF77-47E0-97B3-F8A15044078F}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_PL_PickupGear" ID="{61CF8E78-E069-4F4F-B7EE-0705947A0DD4}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Synth_Solo_Win" ID="{74223744-8824-44A0-B399-ADB46323AE50}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
 							<Position X="4" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_SynthWinning" ID="{F49A49FB-EC60-458B-887D-4D4F43EFE62F}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_PL_Stunned" ID="{028BCF63-E073-43DA-BDA2-53D4819CB399}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_ENV_GearPlacedinTerminal" ID="{1E6DFA86-7183-4A20-96BA-1BA1F9CCF8A7}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="5" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_ThrowGear" ID="{498DB925-5B35-421D-9D7A-E3C5CABF4193}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="5" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Synth_Solo_State" ID="{59A61B69-3B48-4C79-B060-44716CEDFFEB}"/>
+						<CurrentStateRef Name="Menu_State" ID="{D2B62071-4A43-4F20-BCAB-94E6669238F7}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

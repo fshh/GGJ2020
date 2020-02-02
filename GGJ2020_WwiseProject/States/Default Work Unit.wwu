@@ -11,6 +11,7 @@
 						<State Name="Rock_Solo_State" ID="{A9292BAD-2721-41B5-B300-39BC3DB4C70E}"/>
 						<State Name="Synth_Solo_State" ID="{59A61B69-3B48-4C79-B060-44716CEDFFEB}"/>
 						<State Name="Neutral_State" ID="{CD3A2F3B-C666-48C1-AB10-82E7ADBC58D5}"/>
+						<State Name="Menu_State" ID="{D2B62071-4A43-4F20-BCAB-94E6669238F7}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

@@ -20,7 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 26b85e0b02f2a4b8e85ea61bb5357906, type: 2}
   InvalidReferencePlatforms: []
   UserSettings:
-    m_BasePath: Audio\GeneratedSoundBanks
+    m_BasePath: Audio/GeneratedSoundBanks
     m_StartupLanguage: English(US)
     m_PreparePoolSize: 0
     m_CallbackManagerBufferSize: 4096

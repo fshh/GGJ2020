@@ -35,7 +35,6 @@ public class LevelSelectManager : MonoBehaviour
         {
             if (p.GetButtonDown("Cancel"))
             {
-                AkSoundEngine.PostEvent("SFX_UI_CancelBack", gameObject);
                 manager.ChangeToScreen(GameSetupManager.Screen.TEAMSELECT);
             }
         }
@@ -45,7 +44,6 @@ public class LevelSelectManager : MonoBehaviour
 
         if (player.GetButtonDown("Confirm"))
         {
-            AkSoundEngine.PostEvent("SFX_UI_BigConfirm", gameObject);
             PointerEventData data = new PointerEventData(eventSystem);
             data.position = cursor.position;
             List<RaycastResult> results = new List<RaycastResult>();

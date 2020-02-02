@@ -23,7 +23,6 @@ public class HelpScreenManager : MonoBehaviour
         {
             if (p.GetButtonDown("Cancel"))
             {
-                AkSoundEngine.PostEvent("SFX_UI_CancelBack", gameObject);
                 manager.ChangeToScreen(GameSetupManager.Screen.TEAMSELECT);
             }
         }

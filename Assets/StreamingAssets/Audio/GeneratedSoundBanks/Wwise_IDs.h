@@ -14,7 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID ROCK_SOLO_WIN = 887288815U;
-        static const AkUniqueID SET_STATE_MENU = 2302270969U;
         static const AkUniqueID SET_STATE_ROCK_WINNING = 1928154282U;
         static const AkUniqueID SET_STATE_SYNTHWINNING = 153336822U;
         static const AkUniqueID START_GAMEPLAY = 3576058218U;
@@ -29,7 +28,6 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID MENU_STATE = 3941853002U;
                 static const AkUniqueID NEUTRAL_STATE = 2379433868U;
                 static const AkUniqueID ROCK_GROUP_WINNING_STATE = 3581880889U;
                 static const AkUniqueID ROCK_SOLO_STATE = 141569174U;
@@ -39,21 +37,6 @@ namespace AK
         } // namespace GAMEPLAY
 
     } // namespace STATES
-
-    namespace TRIGGERS
-    {
-        static const AkUniqueID SFX_ENV_GEARPLACEDINTERMINAL = 108731474U;
-        static const AkUniqueID SFX_ENV_GEARTAKENFROMTERMINAL = 2998025893U;
-        static const AkUniqueID SFX_PL_JUMP = 3862627584U;
-        static const AkUniqueID SFX_PL_PICKUPGEAR = 1716799481U;
-        static const AkUniqueID SFX_PL_STUNNED = 1921722885U;
-        static const AkUniqueID SFX_PL_THROWGEAR = 290373701U;
-        static const AkUniqueID SFX_UI_BIGCONFIRM = 4191505424U;
-        static const AkUniqueID SFX_UI_CANCELBACK = 602621829U;
-        static const AkUniqueID SFX_UI_CONFIRM = 3923242682U;
-        static const AkUniqueID SFX_UI_ERROR = 212306872U;
-        static const AkUniqueID SFX_UI_MOVEMENT = 703026709U;
-    } // namespace TRIGGERS
 
     namespace BANKS
     {

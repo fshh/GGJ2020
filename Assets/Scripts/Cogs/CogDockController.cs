@@ -42,7 +42,7 @@ public class CogDockController : MonoBehaviour
         if(!occupied && collider.gameObject.CompareTag("Cog") && collider.gameObject.layer == ballLayer) {
             Debug.Log("Gear in Dock");
             occupied = true;
-            AkSoundEngine.PostEvent("SFX_ENV_GearPlacedinTerminal", gameObject);
+            machineSound.PlayOneShot(runningSound);
             collider.gameObject.GetComponent<CogWheel>().DockToggle();
             collider.gameObject.transform.parent = cogPosit;
             collider.gameObject.transform.position = cogPosit.position;
@@ -60,6 +60,7 @@ public class CogDockController : MonoBehaviour
     }
 
     public void RemoveCog() {
+
         leftLight.color = Color.grey;
         rightLight.color = Color.grey;
         foreach (GameObject light in Lights)
@@ -67,7 +68,7 @@ public class CogDockController : MonoBehaviour
             light.SetActive(false);
         }
         occupied = false;
-        AkSoundEngine.PostEvent("SFX_ENV_GearTakenFromTerminal", gameObject);
+        machineSound.PlayOneShot(stoppedSound);
         gameController.SubtractCog(team);
     }
 }

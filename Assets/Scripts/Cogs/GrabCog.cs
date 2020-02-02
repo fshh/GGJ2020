@@ -56,7 +56,6 @@ public class GrabCog : MonoBehaviour
 
     public void PickUp()
     {
-        AkSoundEngine.PostEvent("SFX_PL_PickupGear", gameObject);
         myCog = cogNearMe;
         if (myCog.isDocked()) {
             myCog.DockToggle();
@@ -74,7 +73,6 @@ public class GrabCog : MonoBehaviour
 
     public void ThrowCog()
     {
-        AkSoundEngine.PostEvent("SFX_PL_ThrowGear", gameObject);
         //LayerMask teamToIgnore = LayerMask.NameToLayer()
         myCog.IgnorePlayers(this);
         myCog.transform.parent = null;

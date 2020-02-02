@@ -37,14 +37,12 @@ public class PlayerSelect : MonoBehaviour
         int moveHorizontal = (int)player.GetAxisRaw("Move Horizontal");
         if (!confirmed && player.GetAxisRawPrev("Move Horizontal") == 0f && moveHorizontal != 0)
         {
-            AkSoundEngine.PostEvent("SFX_UI_Movement", gameObject);
             currentPos = Mathf.Clamp(currentPos + moveHorizontal, 0, 2);
             UpdateTextPosition();
         }
 
         if (!confirmed && currentPos != 1 && player.GetButtonDown("Confirm"))
         {
-            AkSoundEngine.PostEvent("SFX_UI_Confirm", gameObject);
             Confirm();
         }
 
@@ -52,12 +50,10 @@ public class PlayerSelect : MonoBehaviour
         {
             if (confirmed)
             {
-                AkSoundEngine.PostEvent("SFX_UI_CancelBack", gameObject);
                 UnConfirm();
             }
             else
             {
-                AkSoundEngine.PostEvent("SFX_UI_CancelBack", gameObject);
                 FindObjectOfType<TeamSelectManager>().GoBack();
             }
         }

@@ -22,60 +22,19 @@
 			<Path>Fight_Song_Bank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="887288815" Name="Rock_Solo_Win" ObjectPath="\Events\Default Work Unit\Rock_Solo_Win" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2302270969" Name="Set_State_Menu" ObjectPath="\Events\Default Work Unit\Set_State_Menu" DurationType="Infinite"/>
 				<Event Id="1928154282" Name="Set_State_Rock_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Rock_Winning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="153336822" Name="Set_State_SynthWinning" ObjectPath="\Events\Default Work Unit\Set_State_SynthWinning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3576058218" Name="Start_Gameplay" ObjectPath="\Events\Default Work Unit\Start_Gameplay" DurationType="Infinite"/>
 				<Event Id="2830440394" Name="Synth_Solo_Win" ObjectPath="\Events\Default Work Unit\Synth_Solo_Win" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="89201798" Language="SFX">
-					<ShortName>SFX_UI_CancelBack.wav</ShortName>
-					<Path>SFX/SFX_UI_CancelBack_D79FB2B7.wem</Path>
-				</File>
 				<File Id="107542522" Language="SFX">
 					<ShortName>Rock_Gameplay.wav</ShortName>
 					<Path>SFX/Rock_Gameplay_D79FB2B7.wem</Path>
 				</File>
-				<File Id="160010879" Language="SFX">
-					<ShortName>SFX_UI_Confirm.wav</ShortName>
-					<Path>SFX/SFX_UI_Confirm_D79FB2B7.wem</Path>
-				</File>
-				<File Id="171553015" Language="SFX">
-					<ShortName>FightSong_Menu.wav</ShortName>
-					<Path>SFX/FightSong_Menu_D79FB2B7.wem</Path>
-				</File>
-				<File Id="175759163" Language="SFX">
-					<ShortName>SFX_ENV_GearTakenFromTerminal.wav</ShortName>
-					<Path>SFX/SFX_ENV_GearTakenFromTerminal_D79FB2B7.wem</Path>
-				</File>
 				<File Id="370314013" Language="SFX">
 					<ShortName>Synth_Gameplay.wav</ShortName>
 					<Path>SFX/Synth_Gameplay_D79FB2B7.wem</Path>
-				</File>
-				<File Id="424904527" Language="SFX">
-					<ShortName>SFX_PL_Jump.wav</ShortName>
-					<Path>SFX/SFX_PL_Jump_D79FB2B7.wem</Path>
-				</File>
-				<File Id="503255729" Language="SFX">
-					<ShortName>SFX_UI_Movement.wav</ShortName>
-					<Path>SFX/SFX_UI_Movement_D79FB2B7.wem</Path>
-				</File>
-				<File Id="505511322" Language="SFX">
-					<ShortName>SFX_PL_Stunned.wav</ShortName>
-					<Path>SFX/SFX_PL_Stunned_D79FB2B7.wem</Path>
-				</File>
-				<File Id="556597013" Language="SFX">
-					<ShortName>SFX_ENV_GearPlacedinTerminal.wav</ShortName>
-					<Path>SFX/SFX_ENV_GearPlacedinTerminal_D79FB2B7.wem</Path>
-				</File>
-				<File Id="686443326" Language="SFX">
-					<ShortName>SFX_UI_Error.wav</ShortName>
-					<Path>SFX/SFX_UI_Error_D79FB2B7.wem</Path>
-				</File>
-				<File Id="726843354" Language="SFX">
-					<ShortName>SFX_PL_PickupGear.wav</ShortName>
-					<Path>SFX/SFX_PL_PickupGear_D79FB2B7.wem</Path>
 				</File>
 				<File Id="732286844" Language="SFX">
 					<ShortName>Neutral_Gameplay.wav</ShortName>
@@ -85,17 +44,9 @@
 					<ShortName>Crowd_Roar.wav</ShortName>
 					<Path>SFX/Crowd_Roar_D79FB2B7.wem</Path>
 				</File>
-				<File Id="944124372" Language="SFX">
-					<ShortName>SFX_UI_BigConfirm.wav</ShortName>
-					<Path>SFX/SFX_UI_BigConfirm_D79FB2B7.wem</Path>
-				</File>
 				<File Id="973698791" Language="SFX">
 					<ShortName>Synth_Solo.wav</ShortName>
 					<Path>SFX/Synth_Solo_D79FB2B7.wem</Path>
-				</File>
-				<File Id="997598840" Language="SFX">
-					<ShortName>SFX_PL_ThrowGear.wav</ShortName>
-					<Path>SFX/SFX_PL_ThrowGear_D79FB2B7.wem</Path>
 				</File>
 				<File Id="1036935377" Language="SFX">
 					<ShortName>Rock_Solo.wav</ShortName>

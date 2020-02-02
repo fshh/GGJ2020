@@ -122,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = maxJumpVelocity;
             isDoubleJumping = false;
-            AkSoundEngine.PostEvent("SFX_PL_JUMP", gameObject);
+            audioSource.PlayOneShot(jumpSound);
             //anim.SetInteger("animationState", 2);
         }
         if (canDoubleJump && !IsGrounded() && !isDoubleJumping && !wallSliding)

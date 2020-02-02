@@ -14,6 +14,10 @@ public class CogDockController : MonoBehaviour
     public GameController gameController;
     private bool occupied;
     private int ballLayer;
+
+    public AudioSource machineSound;
+    public AudioClip runningSound;
+    public AudioClip stoppedSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +42,7 @@ public class CogDockController : MonoBehaviour
         if(!occupied && collider.gameObject.CompareTag("Cog") && collider.gameObject.layer == ballLayer) {
             Debug.Log("Gear in Dock");
             occupied = true;
+            machineSound.PlayOneShot(runningSound);
             collider.gameObject.GetComponent<CogWheel>().DockToggle();
             collider.gameObject.transform.parent = cogPosit;
             collider.gameObject.transform.position = cogPosit.position;
@@ -63,6 +68,7 @@ public class CogDockController : MonoBehaviour
             light.SetActive(false);
         }
         occupied = false;
+        machineSound.PlayOneShot(stoppedSound);
         gameController.SubtractCog(team);
     }
 }

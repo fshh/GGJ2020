@@ -11,6 +11,8 @@ public class PlayerInput : MonoBehaviour
     public enum PlayerNumber { ONE = 1, TWO = 2, THREE = 3, FOUR = 4 }
     public PlayerNumber playerNumber;
     public TextMeshProUGUI playerNumberText;
+    public AudioSource playerSound;
+    
 
     private PlayerMovement movement;
     private bool canJump = true;
@@ -67,6 +69,7 @@ public class PlayerInput : MonoBehaviour
             }
 
             if (player.GetButtonDown(jumpInput) && canJump) {
+
                 movement.OnJumpInputDown();
             }
 

@@ -17,17 +17,6 @@ namespace AK
         static const AkUniqueID SET_STATE_MENU = 2302270969U;
         static const AkUniqueID SET_STATE_ROCK_WINNING = 1928154282U;
         static const AkUniqueID SET_STATE_SYNTHWINNING = 153336822U;
-        static const AkUniqueID SFX_ENV_GEARPLACEDINTERMINAL = 108731474U;
-        static const AkUniqueID SFX_ENV_GEARTAKENFROMTERMINAL = 2998025893U;
-        static const AkUniqueID SFX_PL_JUMP = 3862627584U;
-        static const AkUniqueID SFX_PL_PICKUPGEAR = 1716799481U;
-        static const AkUniqueID SFX_PL_STUNNED = 1921722885U;
-        static const AkUniqueID SFX_THROWGEAR = 1462566446U;
-        static const AkUniqueID SFX_UI_BIGCONFIRM = 4191505424U;
-        static const AkUniqueID SFX_UI_CANCELBACK = 602621829U;
-        static const AkUniqueID SFX_UI_CONFIRM = 3923242682U;
-        static const AkUniqueID SFX_UI_ERROR = 212306872U;
-        static const AkUniqueID SFX_UI_MOVEMENT = 703026709U;
         static const AkUniqueID START_GAMEPLAY = 3576058218U;
         static const AkUniqueID SYNTH_SOLO_WIN = 2830440394U;
     } // namespace EVENTS

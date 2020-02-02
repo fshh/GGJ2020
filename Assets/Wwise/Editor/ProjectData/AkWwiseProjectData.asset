@@ -12,14 +12,216 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c60d1689a5249cbb56a5feb5a56cee, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit 2.wwu
+    ParentPhysicalPath: 
+    guid: d6fea2468e090e44b44cba336a3cbc8f
+    GuidInternal: 
+    m_lastTime: -8586209971200981028
+    List: []
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 04ff3659c508c642887b635db44d8ae2
+    GuidInternal: 
+    m_lastTime: -8586209971200976060
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2e0be7270bc919498468de7ae34a1b60
+    GuidInternal: 
+    m_lastTime: -8586209971209244383
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit 2.wwu
+    ParentPhysicalPath: 
+    guid: 8e24202f4f6aeb4fb3e83da67fe7289e
+    GuidInternal: 
+    m_lastTime: -8586209971201060388
+    List: []
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 77d0bec002ca1a49bf77fe57a2a79a21
+    GuidInternal: 
+    m_lastTime: -8586209445488477445
+    List:
+    - name: Fight_Song_Bank
+      guid: b15bb46905bcb142bfa220416a64ffa9
+      id: 1797737612
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fight_Song_Bank
+        ObjectType: 7
+      Path: Default Work Unit\Fight_Song_Bank
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit 2.wwu
+    ParentPhysicalPath: 
+    guid: 1ce2c3b59413db40bd97a801550eeb35
+    GuidInternal: 
+    m_lastTime: -8586209971209343581
+    List: []
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: dcce6f1183573f46a2e0297f8fc94a91
+    GuidInternal: 
+    m_lastTime: -8586209445496438231
+    List:
+    - name: Rock_Solo_Win
+      guid: 9c85f0f68d47ea47acd97d65c4269cbc
+      id: 887288815
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Rock_Solo_Win
+        ObjectType: 3
+      Path: Default Work Unit\Rock_Solo_Win
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Set_State_Rock_Winning
+      guid: 40875ca077cfe04797b3f8a15044078f
+      id: 1928154282
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_State_Rock_Winning
+        ObjectType: 3
+      Path: Default Work Unit\Set_State_Rock_Winning
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Set_State_SynthWinning
+      guid: fb499af460ec8b45887d4d4f43efe62f
+      id: 153336822
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_State_SynthWinning
+        ObjectType: 3
+      Path: Default Work Unit\Set_State_SynthWinning
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Start_Gameplay
+      guid: ef122081e7959548aa11b49247399810
+      id: 3576058218
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Gameplay
+        ObjectType: 3
+      Path: Default Work Unit\Start_Gameplay
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Synth_Solo_Win
+      guid: 443722742488a044b399adb46323ae50
+      id: 2830440394
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Synth_Solo_Win
+        ObjectType: 3
+      Path: Default Work Unit\Synth_Solo_Win
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit 2.wwu
+    ParentPhysicalPath: 
+    guid: a03129cdc48d3142a1e8e56f78adea9d
+    GuidInternal: 
+    m_lastTime: -8586209971209279102
+    List: []
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 62015d8079771e46a432b6df1e6eca75
+    GuidInternal: 
+    m_lastTime: -8586209971209269179
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c1c1f494f5e5884aa65a35eb0f8b4e3e
+    GuidInternal: 
+    m_lastTime: -8586209971201025662
+    List:
+    - name: Gameplay
+      guid: 855626a77538264c84bb450898a5da9f
+      id: 89505537
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gameplay
+        ObjectType: 9
+      Path: Default Work Unit\Gameplay
+      values:
+      - name: Neutral_State
+        guid: 3b2f3acd66c6c148ab1082e7adbc58d5
+        id: 2379433868
+        PathAndIcons:
+        - ElementName: Neutral_State
+          ObjectType: 8
+      - name: None
+        guid: b90caf2fc2b549428a719b5b4900be2c
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Rock_Group_Winning_State
+        guid: 5afef6a0a887894fbe248635e0fef56d
+        id: 3581880889
+        PathAndIcons:
+        - ElementName: Rock_Group_Winning_State
+          ObjectType: 8
+      - name: Rock_Solo_State
+        guid: ad2b29a92127b541b30039bc3db4c70e
+        id: 141569174
+        PathAndIcons:
+        - ElementName: Rock_Solo_State
+          ObjectType: 8
+      - name: Synth_Group_Winning_State
+        guid: a5709f4b3dc41846bfc7d894919ee31d
+        id: 2603661118
+        PathAndIcons:
+        - ElementName: Synth_Group_Winning_State
+          ObjectType: 8
+      - name: Synth_Solo_State
+        guid: 691ba659483b794cb06044716cedffeb
+        id: 4010060711
+        PathAndIcons:
+        - ElementName: Synth_Solo_State
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit 2.wwu
+    ParentPhysicalPath: 
+    guid: eb511002afc5ee4fbbe1a6ef88fed1c6
+    GuidInternal: 
+    m_lastTime: -8586209971201015740
+    List: []
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c5eaca80d57d954197b818a711651b42
+    GuidInternal: 
+    m_lastTime: -8586209971201005831
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit 2.wwu
+    ParentPhysicalPath: 
+    guid: 11e76093cd28fc45920cd362f2cacd98
+    GuidInternal: 
+    m_lastTime: -8586209971201000870
+    List: []
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 33517384aab0d341b0feb1e1adea3e76
+    GuidInternal: 
+    m_lastTime: -8586209971200990951
+    List: []
   ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

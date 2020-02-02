@@ -61,6 +61,7 @@ public class GrabCog : MonoBehaviour
             myCog.DockToggle();
             myCog.transform.parent.gameObject.transform.parent.GetComponent<CogDockController>().RemoveCog();
         }
+        GetComponent<PlayerMovement>().moveSpeed = 4.8f;
         GetComponent<PlayerMovement>().audioSource.PlayOneShot(GetComponent<PlayerMovement>().grabSound);
         myCog.transform.GetChild(0).gameObject.GetComponent<Collider2D>().enabled = false;
         cogNearMe = null;
@@ -83,6 +84,7 @@ public class GrabCog : MonoBehaviour
         //set the physics to ignore this player's teammate
         //throw the sucker
         GetComponent<PlayerMovement>().audioSource.PlayOneShot(GetComponent<PlayerMovement>().throwSound);
+        GetComponent<PlayerMovement>().moveSpeed = 6.0f;
         myCog.myRB.velocity = new Vector2(myCog.throwSpeed * throwDir, myCog.throwHeight);
         myCog = null;
     }
@@ -98,6 +100,7 @@ public class GrabCog : MonoBehaviour
             myCog.GetComponentInChildren<Collider2D>().enabled = true;
             myCog.transform.GetChild(0).gameObject.GetComponent<Collider2D>().enabled = true;
             //GetComponent<PlayerMovement>().audioSource.PlayOneShot(GetComponent<PlayerMovement>().dropSound);
+            GetComponent<PlayerMovement>().moveSpeed = 6.0f;
             //set the physics to ignore this player's teammate
             //throw the sucker
             //myCog.myRB.velocity = new Vector2(myCog.throwSpeed, myCog.throwHeight);

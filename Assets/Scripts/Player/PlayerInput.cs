@@ -56,13 +56,13 @@ public class PlayerInput : MonoBehaviour
             if (player.GetButtonDown(interactInput))
             {
                 Debug.Log("press");
-                if (grabCog.cogNearMe != null)
-                {
-                    grabCog.PickUp();
-                }
-                else if (grabCog.myCog != null)
+                if (grabCog.myCog != null)
                 {
                     grabCog.ThrowCog();
+                }
+                else if (grabCog.cogNearMe != null)
+                {
+                    grabCog.PickUp();
                 }
             }
 

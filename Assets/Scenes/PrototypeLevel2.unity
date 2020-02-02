@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1193,7 +1193,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1556126382}
     - target: {fileID: 3035814242780033579, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: team
@@ -1700,7 +1700,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1556126382}
     - target: {fileID: 3035814242780033579, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: team
@@ -1887,7 +1887,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1556126382}
     - target: {fileID: 3035814242780033588, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_Name
@@ -2076,7 +2076,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1556126382}
     - target: {fileID: 3035814242780033579, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: team
@@ -2960,6 +2960,18 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1556126382 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6381378953784325216, guid: be0e9044923b741648aba439f8a61fad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1150840989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82352cd629019ed49978c177a0743d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1570818503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4980405682897599453, guid: d2308d9468d414b30a1f37583d327cde,
@@ -4266,7 +4278,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1556126382}
     - target: {fileID: 3035814242780033588, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_Name
@@ -4544,7 +4556,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1556126382}
     - target: {fileID: 3035814242780033588, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_Name

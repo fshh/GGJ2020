@@ -290,7 +290,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 842284126}
     - target: {fileID: 3035814242780033588, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_Name
@@ -820,7 +820,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 842284126}
     - target: {fileID: 3035814242780033579, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: team
@@ -1216,7 +1216,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 842284126}
     - target: {fileID: 3035814242780033579, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: team
@@ -1428,6 +1428,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be0e9044923b741648aba439f8a61fad, type: 3}
+--- !u!114 &842284126 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6381378953784325216, guid: be0e9044923b741648aba439f8a61fad,
+    type: 3}
+  m_PrefabInstance: {fileID: 842284125}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82352cd629019ed49978c177a0743d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &851796452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1695,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &926934821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926934823}
+  - component: {fileID: 926934822}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &926934822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926934821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00dba65c7f5e34c2395c021af9506be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: bef47d34ff6854fcca9a013d0ebcca8a,
+    type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  diffractionFlags: 0
+  engineLogging: 0
+--- !u!4 &926934823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926934821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &951663872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1890,7 +1961,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 842284126}
     - target: {fileID: 3035814242780033588, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_Name
@@ -2315,7 +2386,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 842284126}
     - target: {fileID: 3035814242780033588, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_Name
@@ -2405,8 +2476,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1549348331}
   - component: {fileID: 1549348330}
-  - component: {fileID: 1549348329}
   - component: {fileID: 1549348328}
+  - component: {fileID: 1549348332}
+  - component: {fileID: 1549348329}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2445,14 +2517,20 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &1549348329
-AudioListener:
+--- !u!114 &1549348329
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549348327}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ab8d5be06724c609561750d558485a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!20 &1549348330
 Camera:
   m_ObjectHideFlags: 0
@@ -2511,6 +2589,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1549348332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549348327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6441c5e1bed9497d88fd2e133eb297d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1568319779
 GameObject:
   m_ObjectHideFlags: 0
@@ -6910,7 +7010,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 842284126}
     - target: {fileID: 3035814242780033579, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: team

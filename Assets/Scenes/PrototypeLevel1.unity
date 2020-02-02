@@ -817,6 +817,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be0e9044923b741648aba439f8a61fad, type: 3}
+--- !u!114 &399186348 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6381378953784325216, guid: be0e9044923b741648aba439f8a61fad,
+    type: 3}
+  m_PrefabInstance: {fileID: 399186347}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82352cd629019ed49978c177a0743d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!223 &402862899 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 6586502008687169645, guid: 419fce35787bdcb448df3a4262b8e7d4,
@@ -1362,7 +1374,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 399186348}
     - target: {fileID: 3035814242780033579, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: team
@@ -1962,7 +1974,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 399186348}
     - target: {fileID: 3035814242780033588, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_Name
@@ -2157,7 +2169,7 @@ PrefabInstance:
     - target: {fileID: 3035814242780033576, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 3035814242780033576, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
@@ -2213,7 +2225,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 399186348}
     - target: {fileID: 3035814242780033579, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: team
@@ -2491,7 +2503,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 399186348}
     - target: {fileID: 3035814242780033579, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: team
@@ -2877,7 +2889,7 @@ PrefabInstance:
     - target: {fileID: 3035814242780033576, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 3035814242780033576, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
@@ -2933,7 +2945,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 399186348}
     - target: {fileID: 3035814242780033588, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_Name
@@ -6848,7 +6860,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 399186348}
     - target: {fileID: 3035814242780033588, guid: acb74f701f9e84a4a9e22f8ab11a02d4,
         type: 3}
       propertyPath: m_Name

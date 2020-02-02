@@ -41,9 +41,9 @@ MonoBehaviour:
     List: []
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 77d0bec002ca1a49bf77fe57a2a79a21
     GuidInternal: 
-    m_lastTime: -8586210014014775808
+    m_lastTime: -8586209996194775808
     List:
     - name: Fight_Song_Soundbank
       guid: 50ac56bf3efde24fa0aba9ac623b62ae
@@ -63,9 +63,9 @@ MonoBehaviour:
     List: []
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: dcce6f1183573f46a2e0297f8fc94a91
     GuidInternal: 
-    m_lastTime: -8586210016634775808
+    m_lastTime: -8586209996194775808
     List:
     - name: Rock_Wins
       guid: 813b3b41520ae0498daadf8609448367
@@ -167,9 +167,9 @@ MonoBehaviour:
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: c1c1f494f5e5884aa65a35eb0f8b4e3e
     GuidInternal: 
-    m_lastTime: -8586210029244775808
+    m_lastTime: -8586209996194775808
     List:
     - name: Fight_Song_State_Group
       guid: ec34884d0b230b4c996d84c12c810c71
@@ -302,6 +302,11 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586210157224775808
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /GGJ2020_WwiseProject
+  - /GGJ2020_WwiseProject/Events
+  - /GGJ2020_WwiseProject/Events/Default Work Unit
+  - /GGJ2020_WwiseProject/SoundBanks
+  - /GGJ2020_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

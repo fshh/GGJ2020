@@ -81,6 +81,7 @@ public class CogWheel : MonoBehaviour
 
     public void DockToggle() {
         docked = !docked;
+        Debug.Log(docked);
     }
 
     public bool isDocked() {

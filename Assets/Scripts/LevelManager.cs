@@ -25,7 +25,7 @@ public class LevelManager : MonoBehaviour
     {
         Transform spawns = GameObject.Find("SpawnPoints").transform;
         // CHANGE BACK TO DEFAULT PLAYER PREFAB AFTER TESTING
-        GameObject playerPrefab = Resources.Load<GameObject>("PlayerThrowCog");
+        GameObject playerPrefab = Resources.Load<GameObject>("cOGpLAYER");
         for (int ii = 0; ii < numPlayers; ii++)
         {
             // Instantiate player

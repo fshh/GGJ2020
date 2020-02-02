@@ -60,7 +60,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Synth_Solo_State" ID="{59A61B69-3B48-4C79-B060-44716CEDFFEB}" WorkUnitID="{94F4C1C1-E5F5-4A88-A65A-35EB0F8B4E3E}"/>
+									<ObjectRef Name="Rock_Solo_State" ID="{A9292BAD-2721-41B5-B300-39BC3DB4C70E}" WorkUnitID="{94F4C1C1-E5F5-4A88-A65A-35EB0F8B4E3E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

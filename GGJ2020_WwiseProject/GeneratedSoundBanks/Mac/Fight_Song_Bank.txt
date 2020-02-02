@@ -1,0 +1,26 @@
+Event	ID	Name			Wwise Object Path	Notes
+	153336822	Set_State_SynthWinning			\Default Work Unit\Set_State_SynthWinning	
+	887288815	Rock_Solo_Win			\Default Work Unit\Rock_Solo_Win	
+	1928154282	Set_State_Rock_Winning			\Default Work Unit\Set_State_Rock_Winning	
+	2830440394	Synth_Solo_Win			\Default Work Unit\Synth_Solo_Win	
+	3576058218	Start_Gameplay			\Default Work Unit\Start_Gameplay	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	89505537	Gameplay			\Default Work Unit\Gameplay	
+
+State	ID	Name	State Group			Notes
+	0	None	Gameplay			
+	141569174	Rock_Solo_State	Gameplay			
+	2379433868	Neutral_State	Gameplay			
+	2603661118	Synth_Group_Winning_State	Gameplay			
+	3581880889	Rock_Group_Winning_State	Gameplay			
+	4010060711	Synth_Solo_State	Gameplay			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	107542522	Rock_Gameplay	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Rock_Gameplay_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Rock_Playlist\Rock_Gameplay\Rock_Gameplay		9754224
+	370314013	Synth_Gameplay	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Synth_Gameplay_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Synth_Playlist\Synth_Gameplay\Synth_Gameplay		9754224
+	732286844	Neutral_Gameplay	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Neutral_Gameplay_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Neutral_Playlist\Neutral_Gameplay\Neutral_Gameplay		10090576
+	734555033	Crowd_Roar	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Crowd_Roar_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Rock_Solo\Crowd_Roar		850906
+	973698791	Synth_Solo	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Synth_Solo_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Synth_Solo\Synth_Solo		1681816
+	1036935377	Rock_Solo	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Rock_Solo_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay_Switch\Rock_Solo\Rock_Solo		1681816
+

@@ -1695,6 +1695,7 @@ MonoBehaviour:
   soloist2: {fileID: 1559010820}
   gameOverUI: {fileID: 402862899}
   liftSpeed: 1
+  maxY: 0
 --- !u!4 &1569653842
 Transform:
   m_ObjectHideFlags: 0

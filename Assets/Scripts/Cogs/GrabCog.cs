@@ -62,7 +62,7 @@ public class GrabCog : MonoBehaviour
             myCog.DockToggle();
             myCog.transform.parent.gameObject.transform.parent.GetComponent<CogDockController>().RemoveCog();
         }
-        GetComponent<PlayerMovement>().moveSpeed = 6f;
+        GetComponent<PlayerMovement>().moveSpeed = 8f;
         GetComponent<PlayerMovement>().audioSource.PlayOneShot(GetComponent<PlayerMovement>().grabSound);
         myCog.transform.GetChild(0).gameObject.GetComponent<Collider2D>().enabled = false;
         cogNearMe = null;

@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public float liftSpeed;
     public float maxY;
     private int winner;
+    private int leader;
     private float team1Cogs;
     private float team2Cogs;
 
@@ -18,6 +19,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         winner = 0;
+        leader = 0;
         team1Cogs = 0.0f;
         team2Cogs = 0.0f;
     }
@@ -37,6 +39,25 @@ public class GameController : MonoBehaviour
 
         LiftSoloist(soloist1, team1Cogs);
         LiftSoloist(soloist2, team2Cogs);
+        float biggestY = Mathf.Max(soloist1.transform.position.y, soloist2.transform.position.y);
+
+        if (leader == 0 && biggestY == soloist1.transform.position.y && biggestY != soloist2.transform.position.y)
+		{
+            leader = 1;
+            AkSoundEngine.PostEvent("Set_State_Rock_Winning", gameObject);
+        } else if (leader == 0 && biggestY == soloist2.transform.position.y && biggestY != soloist1.transform.position.y)
+		{
+            leader = 2;
+            AkSoundEngine.PostEvent("Set_State_SynthWinning", gameObject);
+        } else if (leader == 1 && biggestY != -8.5f && biggestY == soloist2.transform.position.y)
+		{
+            leader = 2;
+            AkSoundEngine.PostEvent("Set_State_SynthWinning", gameObject);
+        } else if (leader == 2 && biggestY != -8.5f && biggestY == soloist1.transform.position.y)
+		{
+            leader = 1;
+            AkSoundEngine.PostEvent("Set_State_Rock_Winning", gameObject);
+        }
     }
 
     public int GetWinner() {

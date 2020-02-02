@@ -16,8 +16,10 @@ public class WinScreenController : MonoBehaviour
         // Filler conditional until game controller is built
         if (gameController.GetComponent<GameController>().GetWinner() == 1) {
             myImage.sprite = team1Win;
+            AkSoundEngine.PostEvent("Rock_Solo_Win", gameObject);
         } else {
             myImage.sprite = team2Win;
+            AkSoundEngine.PostEvent("Synth_Solo_Win", gameObject);
         }
     }
 }

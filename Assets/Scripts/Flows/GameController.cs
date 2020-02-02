@@ -17,8 +17,8 @@ public class GameController : MonoBehaviour
     void Start()
     {
         winner = 0;
-        team1Cogs = 1.0f;
-        team2Cogs = 2.0f;
+        team1Cogs = 0.0f;
+        team2Cogs = 0.0f;
     }
 
     // Update is called once per frame

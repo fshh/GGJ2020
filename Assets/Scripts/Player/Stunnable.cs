@@ -16,6 +16,7 @@ public class Stunnable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        stunParticles.Stop();
         input = GetComponent<PlayerInput>();
         audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();

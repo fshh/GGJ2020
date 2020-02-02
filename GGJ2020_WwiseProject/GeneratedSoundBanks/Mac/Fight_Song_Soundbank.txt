@@ -1,0 +1,36 @@
+Event	ID	Name			Wwise Object Path	Notes
+	171267552	Rock_Wins			\Default Work Unit\Rock_Wins	
+	1114964412	Start_Game			\Default Work Unit\Start_Game	
+	1405444765	Synth_Wins			\Default Work Unit\Synth_Wins	
+	1928154282	Set_State_Rock_Winning			\Default Work Unit\Set_State_Rock_Winning	
+	2289732960	Set_State_Gameplay			\Default Work Unit\Set_State_Gameplay	
+	2302270969	Set_State_Menu			\Default Work Unit\Set_State_Menu	
+	3921242951	Set_State_Synth_Winning			\Default Work Unit\Set_State_Synth_Winning	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	444966094	Menu_State_Group			\Default Work Unit\Menu_State_Group	
+	2321468137	Fight_Song_State_Group			\Default Work Unit\Fight_Song_State_Group	
+	3663545511	Gameplay_State_Group			\Default Work Unit\Gameplay_State_Group	
+
+State	ID	Name	State Group			Notes
+	0	None	Menu_State_Group			
+	2607556080	Menu	Menu_State_Group			
+	0	None	Fight_Song_State_Group			
+	762757699	Gameplay_State	Fight_Song_State_Group			
+	3941853002	Menu_State	Fight_Song_State_Group			
+	0	None	Gameplay_State_Group			
+	141569174	Rock_Solo_State	Gameplay_State_Group			
+	2379433868	Neutral_State	Gameplay_State_Group			
+	2603661118	Synth_Group_Winning_State	Gameplay_State_Group			
+	3581880889	Rock_Group_Winning_State	Gameplay_State_Group			
+	4010060711	Synth_Solo_State	Gameplay_State_Group			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	107542522	Rock_Gameplay	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Rock_Gameplay_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Song_Switch\Gameplay_Switch\Rock_Playlist\Rock_Gameplay\Rock_Gameplay		9754224
+	370314013	Synth_Gameplay	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Synth_Gameplay_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Song_Switch\Gameplay_Switch\Synth_Playlist\Synth_Gameplay\Synth_Gameplay		9754224
+	734555033	Crowd_Roar	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Crowd_Roar_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Song_Switch\Gameplay_Switch\Rock_Solo_Playlist\Crowd_Roar		850906
+	877071152	FightSong_Menu	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\FightSong_Menu_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Song_Switch\Gameplay_Switch\Neutral_Playlist\FightSong_Menu\FightSong_Menu		9754228
+	912601529	Crowd Chatter	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Crowd Chatter_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Song_Switch\Menu_Switch\Menu_Playlist\FightSong_Menu\Crowd Chatter		10979476
+	973698791	Synth_Solo	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Synth_Solo_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Song_Switch\Gameplay_Switch\Synth_Solo_Playlist\Synth_Solo		1681816
+	1036935377	Rock_Solo	Y:\Documents\GitHub\GGJ2020\GGJ2020_WwiseProject\.cache\Mac\SFX\Rock_Solo_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Fight_Song_Switch\Gameplay_Switch\Rock_Solo_Playlist\Rock_Solo		1681816
+

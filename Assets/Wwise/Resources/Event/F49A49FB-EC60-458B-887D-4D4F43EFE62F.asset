@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057e1765868dc4f0cae89b513d6c2d85, type: 3}
+  m_Name: F49A49FB-EC60-458B-887D-4D4F43EFE62F
+  m_EditorClassIdentifier: 
+  objectName: Set_State_Synth_Winning
+  id: 3921242951
+  guid: F49A49FB-EC60-458B-887D-4D4F43EFE62F

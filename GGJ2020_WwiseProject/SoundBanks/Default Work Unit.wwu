@@ -12,6 +12,7 @@
 						<ObjectRef Name="Rock_Wins" ID="{413B3B81-0A52-49E0-8DAA-DF8609448367}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Start_Game" ID="{0B3B430A-5311-4BBF-9A18-904E0E5A086B}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Set_State_Menu" ID="{C0802F5A-960A-4CCE-9E89-21CE90DF7C2C}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Start_Menu_Event" ID="{BE4FD46A-C1C3-4E2E-81A4-9C3E4616D8BB}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -575,9 +575,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicSegment Name="FightSong_Menu" ID="{8F50C6E6-9E69-4013-BDDF-44C1D2EEB9A5}" ShortID="130782846">
+										<MusicSegment Name="Neutral_Gameplay" ID="{E7E8328B-2104-4653-937A-EC4A85746D9D}" ShortID="776228226">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="50802.9375"/>
+												<Property Name="EndPosition" Type="Real64" Value="52554.75"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -588,20 +588,27 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="FightSong_Menu" ID="{02665F16-B69B-4147-A7ED-0C0E376AC316}" ShortID="185059128">
+												<MusicTrack Name="Neutral_Gameplay" ID="{10626E14-DE42-4B3E-BF5B-ECE70E461C14}" ShortID="852503305">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27E70B2E-C90B-4919-8468-DE7AE34A1B60}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FightSong_Menu" ID="{E372BED4-C195-43F0-9BCD-4E7308026B41}" ShortID="877071152">
+														<AudioFileSource Name="Neutral_Gameplay" ID="{538AF950-0C63-4D29-8E52-1DE8B3BC70B3}" ShortID="701379319">
 															<Language>SFX</Language>
-															<AudioFile>FightSong_Menu.wav</AudioFile>
+															<AudioFile>Neutral_Gameplay.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{C0097232-A286-4C26-AB0C-CC3AC1D13E45}">
+														<MusicTransition Name="Root" ID="{B42653B6-391C-4D3C-8C84-B8187CCF39DE}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -609,15 +616,15 @@
 														</MusicTransition>
 													</TransitionList>
 													<SequenceList>
-														<MusicTrackSequence Name="" ID="{C3E1C7B9-BF4B-4CE1-B286-E54A9CF0F375}">
+														<MusicTrackSequence Name="" ID="{8D9D5718-83F6-4DC6-BA76-5AE8684CFAEA}">
 															<ClipList>
-																<MusicClip Name="FightSong_Menu" ID="{3DB68F04-FA69-4257-84E7-42C7F862D703}">
+																<MusicClip Name="Neutral_Gameplay" ID="{2EE4DAE3-0A4D-4776-9700-4B4689CA1097}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="50802.9375"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="52554.75"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="FightSong_Menu" ID="{E372BED4-C195-43F0-9BCD-4E7308026B41}"/>
+																	<AudioSourceRef Name="Neutral_Gameplay" ID="{538AF950-0C63-4D29-8E52-1DE8B3BC70B3}"/>
 																</MusicClip>
 															</ClipList>
 														</MusicTrackSequence>
@@ -625,11 +632,11 @@
 												</MusicTrack>
 											</ChildrenList>
 											<CueList>
-												<MusicCue Name="Entry Cue" ID="{8BCA9F34-8138-4604-90C4-880B1830D345}"/>
-												<MusicCue Name="Exit Cue" ID="{2B82CAEF-5EE4-4FD5-8EB2-BF63FC54EF1B}">
+												<MusicCue Name="Entry Cue" ID="{36934A45-D551-46B1-A359-4BE8A074D107}"/>
+												<MusicCue Name="Exit Cue" ID="{558605CE-2ABB-4D45-9F0D-F479C4F8AAA4}">
 													<PropertyList>
 														<Property Name="CueType" Type="int16" Value="1"/>
-														<Property Name="TimeMs" Type="Real64" Value="50802.9375"/>
+														<Property Name="TimeMs" Type="Real64" Value="49154.5833333333"/>
 													</PropertyList>
 												</MusicCue>
 											</CueList>
@@ -654,11 +661,11 @@
 												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
 											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{E0257C6B-28BB-405F-8508-FDC6C06FD576}" ShortID="506639207">
+												<MusicPlaylistItem Name="" ID="{5C602A15-0E0B-4256-9B74-17BF1C465AE6}" ShortID="518738205">
 													<PropertyList>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
-													<SegmentRef Name="FightSong_Menu" ID="{8F50C6E6-9E69-4013-BDDF-44C1D2EEB9A5}"/>
+													<SegmentRef Name="Neutral_Gameplay" ID="{E7E8328B-2104-4653-937A-EC4A85746D9D}"/>
 												</MusicPlaylistItem>
 											</ChildrenList>
 										</MusicPlaylistItem>

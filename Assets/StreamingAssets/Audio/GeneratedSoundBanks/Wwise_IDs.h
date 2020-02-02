@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID SET_STATE_ROCK_WINNING = 1928154282U;
         static const AkUniqueID SET_STATE_SYNTH_WINNING = 3921242951U;
         static const AkUniqueID START_GAME = 1114964412U;
+        static const AkUniqueID START_MENU_EVENT = 3188959234U;
         static const AkUniqueID SYNTH_WINS = 1405444765U;
     } // namespace EVENTS
 

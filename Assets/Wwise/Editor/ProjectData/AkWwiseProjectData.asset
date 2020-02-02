@@ -43,7 +43,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 77d0bec002ca1a49bf77fe57a2a79a21
     GuidInternal: 
-    m_lastTime: -8586209826594775808
+    m_lastTime: -8586209536294775808
     List:
     - name: Fight_Song_Soundbank
       guid: 50ac56bf3efde24fa0aba9ac623b62ae
@@ -65,7 +65,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: dcce6f1183573f46a2e0297f8fc94a91
     GuidInternal: 
-    m_lastTime: -8586209817404775808
+    m_lastTime: -8586209538674775808
     List:
     - name: Rock_Wins
       guid: 813b3b41520ae0498daadf8609448367
@@ -318,7 +318,5 @@ MonoBehaviour:
   - /GGJ2020_WwiseProject
   - /GGJ2020_WwiseProject/Events
   - /GGJ2020_WwiseProject/Events/Default Work Unit
-  - /GGJ2020_WwiseProject/SoundBanks
-  - /GGJ2020_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -22,6 +22,7 @@
 				<Event Id="1928154282" Name="Set_State_Rock_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Rock_Winning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3921242951" Name="Set_State_Synth_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Synth_Winning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1114964412" Name="Start_Game" ObjectPath="\Events\Default Work Unit\Start_Game" DurationType="Infinite"/>
+				<Event Id="3188959234" Name="Start_Menu_Event" ObjectPath="\Events\Default Work Unit\Start_Menu_Event" DurationType="Infinite"/>
 				<Event Id="1405444765" Name="Synth_Wins" ObjectPath="\Events\Default Work Unit\Synth_Wins" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -32,6 +33,10 @@
 				<File Id="370314013" Language="SFX">
 					<ShortName>Synth_Gameplay.wav</ShortName>
 					<Path>SFX/Synth_Gameplay_D79FB2B7.wem</Path>
+				</File>
+				<File Id="701379319" Language="SFX">
+					<ShortName>Neutral_Gameplay.wav</ShortName>
+					<Path>SFX/Neutral_Gameplay_D79FB2B7.wem</Path>
 				</File>
 				<File Id="734555033" Language="SFX">
 					<ShortName>Crowd_Roar.wav</ShortName>

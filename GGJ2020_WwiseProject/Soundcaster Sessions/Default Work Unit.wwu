@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Start_Menu_Event" ID="{BE4FD46A-C1C3-4E2E-81A4-9C3E4616D8BB}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Set_State_Menu" ID="{C0802F5A-960A-4CCE-9E89-21CE90DF7C2C}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -37,8 +41,8 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Menu" ID="{A82244CC-E612-4898-B63C-8887A7C9DAE8}"/>
-						<CurrentStateRef Name="None" ID="{263C0539-74DE-4CB6-BF69-9DD894819A9A}"/>
-						<CurrentStateRef Name="Rock_Group_Winning_State" ID="{A0F6FE5A-87A8-4F89-BE24-8635E0FEF56D}"/>
+						<CurrentStateRef Name="Gameplay_State" ID="{DEF04162-D974-4886-AB7A-AE982FC0D7F6}"/>
+						<CurrentStateRef Name="Neutral_State" ID="{CD3A2F3B-C666-48C1-AB10-82E7ADBC58D5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

@@ -11,6 +11,8 @@ public class CogWheel : MonoBehaviour
     public float throwHeight;
     public GrabCog carrier;
     public Rigidbody2D myRB;
+    public AudioSource cogSound;
+    public AudioClip cogHit;
 
     private bool docked;
     //public Team team
@@ -41,6 +43,7 @@ public class CogWheel : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Platform"))
         {
+            cogSound.PlayOneShot(cogHit);
             ResetIgnore();
         }
 

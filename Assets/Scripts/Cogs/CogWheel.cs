@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class CogWheel : MonoBehaviour
@@ -13,6 +14,9 @@ public class CogWheel : MonoBehaviour
     public Rigidbody2D myRB;
     public AudioSource cogSound;
     public AudioClip cogHit;
+    public GameObject cogchild;
+    public SpriteRenderer cogsprite;
+    public TrailRenderer myTrail;
 
     private bool docked;
     //public Team team
@@ -44,6 +48,8 @@ public class CogWheel : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Platform"))
         {
             cogSound.PlayOneShot(cogHit);
+            myTrail.startColor = Color.grey;
+            myTrail.endColor = Color.grey;
             ResetIgnore();
         }
 
@@ -84,6 +90,8 @@ public class CogWheel : MonoBehaviour
 
     public void DockToggle() {
         docked = !docked;
+       GetComponent<CircleCollider2D>().enabled = !GetComponent<CircleCollider2D>().enabled;
+
         Debug.Log(docked);
     }
 

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 public class GrabCog : MonoBehaviour
@@ -61,15 +62,17 @@ public class GrabCog : MonoBehaviour
             myCog.DockToggle();
             myCog.transform.parent.gameObject.transform.parent.GetComponent<CogDockController>().RemoveCog();
         }
-        GetComponent<PlayerMovement>().moveSpeed = 4.8f;
+        GetComponent<PlayerMovement>().moveSpeed = 6f;
         GetComponent<PlayerMovement>().audioSource.PlayOneShot(GetComponent<PlayerMovement>().grabSound);
         myCog.transform.GetChild(0).gameObject.GetComponent<Collider2D>().enabled = false;
         cogNearMe = null;
         myCog.transform.parent = heldCogPosit;
         myCog.transform.position = heldCogPosit.position;
         myCog.myRB.bodyType = RigidbodyType2D.Kinematic;
-        myCog.GetComponent<Collider2D>().enabled = false;
+        myCog.GetComponent<CircleCollider2D>().enabled = false;
         myCog.GetComponentInChildren<Collider2D>().enabled = false;
+        myCog.cogsprite.enabled = false;
+        myCog.myTrail.enabled = false;
     }
 
     public void ThrowCog()
@@ -78,14 +81,16 @@ public class GrabCog : MonoBehaviour
         myCog.IgnorePlayers(this);
         myCog.transform.parent = null;
         myCog.myRB.bodyType = RigidbodyType2D.Dynamic;
-        myCog.GetComponent<Collider2D>().enabled = true;
+        myCog.GetComponent<CircleCollider2D>().enabled = true;
         myCog.GetComponentInChildren<Collider2D>().enabled = true;
         myCog.transform.GetChild(0).gameObject.GetComponent<Collider2D>().enabled = true;
         //set the physics to ignore this player's teammate
         //throw the sucker
         GetComponent<PlayerMovement>().audioSource.PlayOneShot(GetComponent<PlayerMovement>().throwSound);
-        GetComponent<PlayerMovement>().moveSpeed = 6.0f;
+        GetComponent<PlayerMovement>().moveSpeed = 10.0f;
         myCog.myRB.velocity = new Vector2(myCog.throwSpeed * throwDir, myCog.throwHeight);
+        myCog.cogsprite.enabled = true;
+        myCog.myTrail.enabled = true;
         myCog = null;
     }
 
@@ -96,11 +101,13 @@ public class GrabCog : MonoBehaviour
             myCog.gameObject.layer = LayerMask.NameToLayer("Neutral");
             myCog.transform.parent = null;
             myCog.myRB.bodyType = RigidbodyType2D.Dynamic;
-            myCog.GetComponent<Collider2D>().enabled = true;
+            myCog.GetComponent<CircleCollider2D>().enabled = true;
             myCog.GetComponentInChildren<Collider2D>().enabled = true;
             myCog.transform.GetChild(0).gameObject.GetComponent<Collider2D>().enabled = true;
             //GetComponent<PlayerMovement>().audioSource.PlayOneShot(GetComponent<PlayerMovement>().dropSound);
-            GetComponent<PlayerMovement>().moveSpeed = 6.0f;
+            GetComponent<PlayerMovement>().moveSpeed = 10.0f;
+            myCog.cogsprite.enabled = true;
+            myCog.myTrail.enabled = true;
             //set the physics to ignore this player's teammate
             //throw the sucker
             //myCog.myRB.velocity = new Vector2(myCog.throwSpeed, myCog.throwHeight);

@@ -78,6 +78,8 @@ public class PlayerInput : MonoBehaviour
             }
 
            
+        } else {
+            movement.SetDirectionalInput(Vector2.zero);
         }
     }
 

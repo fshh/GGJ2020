@@ -7,12 +7,22 @@ public class CogDockController : MonoBehaviour
     public Transform cogPosit;
     public int team;
 
+    public SpriteRenderer leftLight;
+    public SpriteRenderer rightLight;
+    public List<GameObject> Lights = new List<GameObject>();
+
     public GameController gameController;
     private bool occupied;
     private int ballLayer;
     // Start is called before the first frame update
     void Start()
     {
+        leftLight.color = Color.grey;
+        rightLight.color = Color.grey;
+        foreach(GameObject light in Lights)
+        {
+            light.SetActive(false);
+        }
         occupied = false;
         ballLayer = team == 1 ? LayerMask.NameToLayer("Ball1") : LayerMask.NameToLayer("Ball2");
     }
@@ -34,10 +44,24 @@ public class CogDockController : MonoBehaviour
             collider.gameObject.layer = LayerMask.NameToLayer("Neutral");
             collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             gameController.AddCog(team);
+
+            leftLight.color = Color.yellow;
+            rightLight.color = Color.yellow;
+            foreach (GameObject light in Lights)
+            {
+                light.SetActive(true);
+            }
         }
     }
 
     public void RemoveCog() {
+
+        leftLight.color = Color.grey;
+        rightLight.color = Color.grey;
+        foreach (GameObject light in Lights)
+        {
+            light.SetActive(false);
+        }
         occupied = false;
         gameController.SubtractCog(team);
     }

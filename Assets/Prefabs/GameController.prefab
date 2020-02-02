@@ -47,3 +47,4 @@ MonoBehaviour:
   soloist2: {fileID: 0}
   gameOverUI: {fileID: 0}
   liftSpeed: 0.1
+  maxY: 0.1

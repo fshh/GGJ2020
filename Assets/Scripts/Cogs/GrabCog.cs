@@ -67,6 +67,8 @@ public class GrabCog : MonoBehaviour
         myCog.transform.position = heldCogPosit.position;
         myCog.myRB.bodyType = RigidbodyType2D.Kinematic;
         myCog.GetComponent<Collider2D>().enabled = false;
+
+        GetComponent<PlayerMovement>().moveSpeed = 4.8f;
     }
 
     public void ThrowCog()
@@ -81,6 +83,8 @@ public class GrabCog : MonoBehaviour
         //throw the sucker
         myCog.myRB.velocity = new Vector2(myCog.throwSpeed * throwDir, myCog.throwHeight);
         myCog = null;
+
+        GetComponent<PlayerMovement>().moveSpeed = 6;
     }
 
     public void Drop()
@@ -96,6 +100,8 @@ public class GrabCog : MonoBehaviour
             //throw the sucker
             //myCog.myRB.velocity = new Vector2(myCog.throwSpeed, myCog.throwHeight);
             myCog = null;
+
+            GetComponent<PlayerMovement>().moveSpeed = 6;
         }
     }
 }

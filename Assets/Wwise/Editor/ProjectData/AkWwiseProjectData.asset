@@ -41,9 +41,9 @@ MonoBehaviour:
     List: []
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 77d0bec002ca1a49bf77fe57a2a79a21
     GuidInternal: 
-    m_lastTime: -8586209477964775808
+    m_lastTime: -8586209469224775808
     List:
     - name: Fight_Song_Bank
       guid: b15bb46905bcb142bfa220416a64ffa9
@@ -63,9 +63,9 @@ MonoBehaviour:
     List: []
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: dcce6f1183573f46a2e0297f8fc94a91
     GuidInternal: 
-    m_lastTime: -8586209481304775808
+    m_lastTime: -8586209391704775808
     List:
     - name: Rock_Solo_Win
       guid: 9c85f0f68d47ea47acd97d65c4269cbc

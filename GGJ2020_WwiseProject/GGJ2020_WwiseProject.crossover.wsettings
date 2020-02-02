@@ -34,7 +34,7 @@
 				<Property Name="Interactive Music\x64_{32744BFC-C0F1-43D4-952B-4D7365AF0E3A} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPy7U0qWS/StAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{8F50C6E6-9E69-4013-BDDF-44C1D2EEB9A5} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP2AzoiK4DitAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{DA6E9D57-3A8B-4541-9F3C-D25D9E16C902} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP4em+RkKS1RAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAABA"/>
-				<Property Name="Interactive Music\x64_{E08B85D4-E85F-41CE-8A23-A55ED91A50F2} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP4em+RkKS1RAAAAAAAAA8D8AAAAAAKiAQAAAAAAAAABA"/>
+				<Property Name="Interactive Music\x64_{E08B85D4-E85F-41CE-8A23-A55ED91A50F2} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP4em+RkKS1RAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAABA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
@@ -60,7 +60,7 @@
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
 				<Property Name="ProjectExplorer\x64_Expanded_10_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_11_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value="Lw4SWs/S4kexjn4d/r7MO/lNdFzZmeJJpchYxtplECA="/>
+				<Property Name="ProjectExplorer\x64_Expanded_12_1" Type="string" Value="Lw4SWs/S4kexjn4d/r7MO/lNdFzZmeJJpchYxtplECCyQoeQ7ww/TbqpozTzZuyg"/>
 				<Property Name="ProjectExplorer\x64_Expanded_13_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_14_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_15_1" Type="string" Value=""/>

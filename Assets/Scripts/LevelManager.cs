@@ -33,7 +33,7 @@ public class LevelManager : MonoBehaviour
 
             // Set player name, number, and colors
             player.name = "Player " + (ii + 1);
-            player.GetComponent<PlayerInput>().playerNumber = (PlayerInput.PlayerNumber)(ii + 1);
+            player.GetComponent<PlayerInput>().playerNumber = (PlayerNumber)(ii + 1);
             colorManager.SetColors(player, ii + 1);
 
             // Set player layer and collision mask

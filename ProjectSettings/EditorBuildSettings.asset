@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MovementTestScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/GameSetup.unity
+    guid: 45401f24cfca346dca5f43e21bf7df36
   - enabled: 1
-    path: Assets/Scenes/PauseMenuTestScene.unity
-    guid: 91006e6e642c5e6498108a1432889930
+    path: Assets/Scenes/Level1.unity
+    guid: 24cfacc976d6543eda94bb598717ba05
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: ae9d5268724086f4080b39f4cef70b58
+    path: Assets/Scenes/Level2.unity
+    guid: f5d03d657fe554a9e87b646cdc302804
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 4b4b743a148f646f0a1a5d6ee6959a94
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 8a7171831ca3c47d5b8eadeffe060660
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: f0812a4b940a348d28790701a1a26f1f
   m_configObjects: {}

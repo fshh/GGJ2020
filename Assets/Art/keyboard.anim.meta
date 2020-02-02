@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Art/keyboard.anim.meta
 guid: e44a207b8dd69406dacb09cd6eaa217d
 NativeFormatImporter:
+=======
+guid: 2942c162ec9bd463aa03823bf05de27c
+folderAsset: yes
+DefaultImporter:
+>>>>>>> master:Assets/Sprites/Player Character.meta
   externalObjects: {}
   mainObjectFileID: 0
   userData: 

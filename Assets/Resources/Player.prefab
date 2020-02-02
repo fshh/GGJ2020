@@ -260,13 +260,13 @@ MonoBehaviour:
   accelerationTimeAirborne: 0.1
   accelerationTimeGrounded: 0.05
   moveSpeed: 10
-  wallJumpClimb: {x: 10, y: 20}
+  wallJumpClimb: {x: 10, y: 22}
   wallJumpOff: {x: 15, y: 18}
   wallLeap: {x: 15, y: 18}
   canDoubleJump: 0
   canWallSlide: 1
-  wallSlideSpeedMax: 3
-  wallStickTime: 0.15
+  wallSlideSpeedMax: 5
+  wallStickTime: 0.01
   jumpSound: {fileID: 0}
   deathSound: {fileID: 0}
 --- !u!1 &1866278485275065717

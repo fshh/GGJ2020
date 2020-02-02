@@ -45,6 +45,9 @@ TagManager:
   - name: WayBack
     uniqueID: 3172633505
     locked: 0
+  - name: Elevator
+    uniqueID: 2257097107
+    locked: 0
   - name: Background
     uniqueID: 4243735121
     locked: 0

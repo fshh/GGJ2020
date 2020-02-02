@@ -21,6 +21,7 @@ public class MainMenuManager : MonoBehaviour
 
         if (ReInput.players.GetPlayer(0).GetButtonDown("Cancel"))
         {
+            AkSoundEngine.PostEvent("SFX_UI_CancelBack", gameObject);
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -31,6 +32,7 @@ public class MainMenuManager : MonoBehaviour
 
         if (ReInput.players.GetPlayer(0).GetAnyButtonDown())
         {
+            AkSoundEngine.PostEvent("SFX_UI_Confirm", gameObject);
             manager.ChangeToScreen(GameSetupManager.Screen.TEAMSELECT);
         }
     }

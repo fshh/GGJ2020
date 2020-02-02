@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID ROCK_SOLO_WIN = 887288815U;
+        static const AkUniqueID SET_STATE_MENU = 2302270969U;
         static const AkUniqueID SET_STATE_ROCK_WINNING = 1928154282U;
         static const AkUniqueID SET_STATE_SYNTHWINNING = 153336822U;
         static const AkUniqueID START_GAMEPLAY = 3576058218U;
@@ -38,6 +39,11 @@ namespace AK
         } // namespace GAMEPLAY
 
     } // namespace STATES
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID SFX_PL_THROWGEAR = 290373701U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

@@ -225,6 +225,7 @@ MonoBehaviour:
   ExpandedItems:
   - /GGJ2020_WwiseProject
   - /GGJ2020_WwiseProject/Events
+  - /GGJ2020_WwiseProject/Events/Default Work Unit
   - /GGJ2020_WwiseProject/SoundBanks
   - /GGJ2020_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1

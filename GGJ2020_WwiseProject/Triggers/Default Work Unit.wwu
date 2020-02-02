@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{84735133-B0AA-41D3-B0FE-B1E1ADEA3E76}" SchemaVersion="94">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{84735133-B0AA-41D3-B0FE-B1E1ADEA3E76}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{84735133-B0AA-41D3-B0FE-B1E1ADEA3E76}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="SFX_PL_ThrowGear" ID="{E8233C80-CFF4-4AF4-AB76-B52651880AC8}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>

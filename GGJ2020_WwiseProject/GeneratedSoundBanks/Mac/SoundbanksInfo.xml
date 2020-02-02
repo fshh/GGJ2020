@@ -22,6 +22,7 @@
 			<Path>Fight_Song_Bank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="887288815" Name="Rock_Solo_Win" ObjectPath="\Events\Default Work Unit\Rock_Solo_Win" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2302270969" Name="Set_State_Menu" ObjectPath="\Events\Default Work Unit\Set_State_Menu" DurationType="Infinite"/>
 				<Event Id="1928154282" Name="Set_State_Rock_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Rock_Winning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="153336822" Name="Set_State_SynthWinning" ObjectPath="\Events\Default Work Unit\Set_State_SynthWinning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3576058218" Name="Start_Gameplay" ObjectPath="\Events\Default Work Unit\Start_Gameplay" DurationType="Infinite"/>

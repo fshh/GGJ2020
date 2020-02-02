@@ -80,6 +80,27 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Set_State_Menu" ID="{87B5B199-A213-4C68-AF02-81528C5157B5}">
+					<ChildrenList>
+						<Action Name="" ID="{32E699D9-724C-4B8E-A278-E373EF795430}" ShortID="204418790">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gameplay_Switch" ID="{5C744DF9-99D9-49E2-A5C8-58C6DA651020}" WorkUnitID="{5A120E2F-D2CF-47E2-B18E-7E1DFEBECC3B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5BCBCC6B-ACBE-4F1C-87BA-6D4BEE9DD58D}" ShortID="576031692">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_State" ID="{D2B62071-4A43-4F20-BCAB-94E6669238F7}" WorkUnitID="{94F4C1C1-E5F5-4A88-A65A-35EB0F8B4E3E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

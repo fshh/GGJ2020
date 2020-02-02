@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	153336822	Set_State_SynthWinning			\Default Work Unit\Set_State_SynthWinning	
 	887288815	Rock_Solo_Win			\Default Work Unit\Rock_Solo_Win	
 	1928154282	Set_State_Rock_Winning			\Default Work Unit\Set_State_Rock_Winning	
+	2302270969	Set_State_Menu			\Default Work Unit\Set_State_Menu	
 	2830440394	Synth_Solo_Win			\Default Work Unit\Synth_Solo_Win	
 	3576058218	Start_Gameplay			\Default Work Unit\Start_Gameplay	
 

@@ -15,27 +15,27 @@ MonoBehaviour:
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: d6fea2468e090e44b44cba336a3cbc8f
     GuidInternal: 
     m_lastTime: -8586210134804775808
     List: []
   - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 04ff3659c508c642887b635db44d8ae2
     GuidInternal: 
     m_lastTime: -8586210157224775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 2e0be7270bc919498468de7ae34a1b60
     GuidInternal: 
     m_lastTime: -8586210157224775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 8e24202f4f6aeb4fb3e83da67fe7289e
     GuidInternal: 
     m_lastTime: -8586210134804775808
     List: []
@@ -43,7 +43,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 77d0bec002ca1a49bf77fe57a2a79a21
     GuidInternal: 
-    m_lastTime: -8586209996194775808
+    m_lastTime: -8586209826594775808
     List:
     - name: Fight_Song_Soundbank
       guid: 50ac56bf3efde24fa0aba9ac623b62ae
@@ -57,7 +57,7 @@ MonoBehaviour:
   EventWwu:
   - PhysicalPath: Events/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 1ce2c3b59413db40bd97a801550eeb35
     GuidInternal: 
     m_lastTime: -8586210134804775808
     List: []
@@ -65,7 +65,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: dcce6f1183573f46a2e0297f8fc94a91
     GuidInternal: 
-    m_lastTime: -8586209996194775808
+    m_lastTime: -8586209817404775808
     List:
     - name: Rock_Wins
       guid: 813b3b41520ae0498daadf8609448367
@@ -77,8 +77,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Rock_Wins
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Set_State_Gameplay
       guid: ef122081e7959548aa11b49247399810
       id: 2289732960
@@ -89,8 +89,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Set_State_Gameplay
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Set_State_Menu
       guid: 5a2f80c00a96ce4c9e8921ce90df7c2c
       id: 2302270969
@@ -101,8 +101,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Set_State_Menu
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Set_State_Rock_Winning
       guid: 40875ca077cfe04797b3f8a15044078f
       id: 1928154282
@@ -113,8 +113,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Set_State_Rock_Winning
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Set_State_Synth_Winning
       guid: fb499af460ec8b45887d4d4f43efe62f
       id: 3921242951
@@ -125,8 +125,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Set_State_Synth_Winning
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Start_Game
       guid: 0a433b0b1153bf4b9a18904e0e5a086b
       id: 1114964412
@@ -136,6 +136,18 @@ MonoBehaviour:
       - ElementName: Start_Game
         ObjectType: 3
       Path: Default Work Unit/Start_Game
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Start_Menu_Event
+      guid: 6ad44fbec3c12e4e81a49c3e4616d8bb
+      id: 3188959234
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Menu_Event
+        ObjectType: 3
+      Path: Default Work Unit/Start_Menu_Event
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -149,18 +161,18 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Synth_Wins
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: a03129cdc48d3142a1e8e56f78adea9d
     GuidInternal: 
     m_lastTime: -8586210134804775808
     List: []
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 62015d8079771e46a432b6df1e6eca75
     GuidInternal: 
     m_lastTime: -8586210157224775808
     List: []
@@ -279,26 +291,26 @@ MonoBehaviour:
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: eb511002afc5ee4fbbe1a6ef88fed1c6
     GuidInternal: 
     m_lastTime: -8586210134804775808
     List: []
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: c5eaca80d57d954197b818a711651b42
     GuidInternal: 
     m_lastTime: -8586210157224775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 11e76093cd28fc45920cd362f2cacd98
     GuidInternal: 
     m_lastTime: -8586210134804775808
     List: []
   - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 33517384aab0d341b0feb1e1adea3e76
     GuidInternal: 
     m_lastTime: -8586210157224775808
     List: []

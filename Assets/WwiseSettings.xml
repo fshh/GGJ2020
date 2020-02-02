@@ -9,5 +9,5 @@
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2019.1.2.7018/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../../GGJ2020/GGJ2020_WwiseProject/GGJ2020_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../GGJ2020_WwiseProject/GGJ2020_WwiseProject.wproj</WwiseProjectPath>
 </WwiseSettings>

@@ -136,6 +136,61 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{52B4EEDF-E654-4994-989F-91A4F9F5B8F7}" ShortID="957803796">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gameplay_Switch" ID="{5C744DF9-99D9-49E2-A5C8-58C6DA651020}" WorkUnitID="{5A120E2F-D2CF-47E2-B18E-7E1DFEBECC3B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3CA54DA5-E87B-4D31-95DA-0392ACE1FD76}" ShortID="104893788">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Neutral_State" ID="{CD3A2F3B-C666-48C1-AB10-82E7ADBC58D5}" WorkUnitID="{94F4C1C1-E5F5-4A88-A65A-35EB0F8B4E3E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Start_Menu_Event" ID="{BE4FD46A-C1C3-4E2E-81A4-9C3E4616D8BB}">
+					<ChildrenList>
+						<Action Name="" ID="{3AAB0A7D-4C83-4448-91F4-DD5DC2439BA8}" ShortID="223288002">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fight_Song_Switch" ID="{F1249F8F-8CBB-41A4-964B-031F26AFD456}" WorkUnitID="{5A120E2F-D2CF-47E2-B18E-7E1DFEBECC3B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{42D7850A-B08F-4D4F-BA29-44ED692F3E68}" ShortID="825475560">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="None" ID="{263C0539-74DE-4CB6-BF69-9DD894819A9A}" WorkUnitID="{94F4C1C1-E5F5-4A88-A65A-35EB0F8B4E3E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AEC1AEFC-99C0-4A2E-958F-7014AF9202FD}" ShortID="626480264">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_Switch" ID="{C68BA369-09A9-490D-90B6-0A510F62F8EB}" WorkUnitID="{5A120E2F-D2CF-47E2-B18E-7E1DFEBECC3B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C7E2FEE2-8288-4F25-991E-08846F475945}" ShortID="460860873">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu" ID="{A82244CC-E612-4898-B63C-8887A7C9DAE8}" WorkUnitID="{94F4C1C1-E5F5-4A88-A65A-35EB0F8B4E3E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

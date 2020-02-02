@@ -16,13 +16,13 @@
 			<ShortName>Fight_Song_Soundbank</ShortName>
 			<Path>Fight_Song_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="171267552" Name="Rock_Wins" ObjectPath="\Events\Default Work Unit\Rock_Wins" MaxAttenuation="0.000000"/>
-				<Event Id="2289732960" Name="Set_State_Gameplay" ObjectPath="\Events\Default Work Unit\Set_State_Gameplay" MaxAttenuation="0.000000"/>
-				<Event Id="2302270969" Name="Set_State_Menu" ObjectPath="\Events\Default Work Unit\Set_State_Menu" MaxAttenuation="0.000000"/>
-				<Event Id="1928154282" Name="Set_State_Rock_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Rock_Winning" MaxAttenuation="0.000000"/>
-				<Event Id="3921242951" Name="Set_State_Synth_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Synth_Winning" MaxAttenuation="0.000000"/>
-				<Event Id="1114964412" Name="Start_Game" ObjectPath="\Events\Default Work Unit\Start_Game"/>
-				<Event Id="1405444765" Name="Synth_Wins" ObjectPath="\Events\Default Work Unit\Synth_Wins" MaxAttenuation="0.000000"/>
+				<Event Id="171267552" Name="Rock_Wins" ObjectPath="\Events\Default Work Unit\Rock_Wins" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2289732960" Name="Set_State_Gameplay" ObjectPath="\Events\Default Work Unit\Set_State_Gameplay" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2302270969" Name="Set_State_Menu" ObjectPath="\Events\Default Work Unit\Set_State_Menu" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1928154282" Name="Set_State_Rock_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Rock_Winning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3921242951" Name="Set_State_Synth_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Synth_Winning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1114964412" Name="Start_Game" ObjectPath="\Events\Default Work Unit\Start_Game" DurationType="Infinite"/>
+				<Event Id="1405444765" Name="Synth_Wins" ObjectPath="\Events\Default Work Unit\Synth_Wins" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="107542522" Language="SFX">

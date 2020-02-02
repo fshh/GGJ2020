@@ -37,8 +37,8 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Menu" ID="{A82244CC-E612-4898-B63C-8887A7C9DAE8}"/>
-						<CurrentStateRef Name="Menu_State" ID="{6C123AE3-39D6-4493-9C82-BB09C15C72BA}"/>
-						<CurrentStateRef Name="None" ID="{2FAF0CB9-B5C2-4249-8A71-9B5B4900BE2C}"/>
+						<CurrentStateRef Name="None" ID="{263C0539-74DE-4CB6-BF69-9DD894819A9A}"/>
+						<CurrentStateRef Name="Rock_Group_Winning_State" ID="{A0F6FE5A-87A8-4F89-BE24-8635E0FEF56D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

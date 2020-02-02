@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/New Folder.meta
 guid: 8c60549b33c38704e8eb1f1562a1be47
+=======
+guid: 04b8eaaadd8b44d29a572701f86675e1
+>>>>>>> 4c313dc9719e33b985495f4b8b8ca543f3e76e59:Assets/DecodedBanks.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

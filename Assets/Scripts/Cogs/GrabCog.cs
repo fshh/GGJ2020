@@ -28,10 +28,13 @@ public class GrabCog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // change to get component for the radius if this works
+        if (cogNearMe != null && Vector2.Distance(transform.position, cogNearMe.transform.position) > 1) {
+            cogNearMe = null;
+        }
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.GetComponentInParent<CogWheel>())
         {
@@ -41,14 +44,14 @@ public class GrabCog : MonoBehaviour
     }
 
 
-    public void OnTriggerExit2D(Collider2D collision)
+    /*public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.GetComponentInParent<CogWheel>())
         {
             //Debug.Log("Stepped away");
             cogNearMe = null;
         }
-    }
+    }*/
   
 
     public void PickUp()
@@ -58,6 +61,7 @@ public class GrabCog : MonoBehaviour
             myCog.DockToggle();
             myCog.transform.parent.gameObject.transform.parent.GetComponent<CogDockController>().RemoveCog();
         }
+        myCog.transform.GetChild(0).gameObject.GetComponent<Collider2D>().enabled = false;
         cogNearMe = null;
         myCog.transform.parent = heldCogPosit;
         myCog.transform.position = heldCogPosit.position;
@@ -72,6 +76,7 @@ public class GrabCog : MonoBehaviour
         myCog.transform.parent = null;
         myCog.myRB.bodyType = RigidbodyType2D.Dynamic;
         myCog.GetComponent<Collider2D>().enabled = true;
+        myCog.transform.GetChild(0).gameObject.GetComponent<Collider2D>().enabled = true;
         //set the physics to ignore this player's teammate
         //throw the sucker
         myCog.myRB.velocity = new Vector2(myCog.throwSpeed * throwDir, myCog.throwHeight);

@@ -6,7 +6,6 @@ using DG.Tweening;
 public class GameSetupManager : MonoBehaviour
 {
     public float transitionTime = 0.5f;
-    //public AudioSource menuMusic;
     private MainMenuManager mainMenu;
     private TeamSelectManager teamSelect;
     private HelpScreenManager helpScreen;
@@ -33,9 +32,6 @@ public class GameSetupManager : MonoBehaviour
         teamSelect.SetAsActive(false);
         helpScreen.SetAsActive(false);
         levelSelect.SetAsActive(false);
-
-        //menuMusic.loop = true;
-        //menuMusic.Play();
     }
 
     // Update is called once per frame

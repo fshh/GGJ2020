@@ -28,7 +28,6 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID MENU_STATE = 3941853002U;
                 static const AkUniqueID NEUTRAL_STATE = 2379433868U;
                 static const AkUniqueID ROCK_GROUP_WINNING_STATE = 3581880889U;
                 static const AkUniqueID ROCK_SOLO_STATE = 141569174U;

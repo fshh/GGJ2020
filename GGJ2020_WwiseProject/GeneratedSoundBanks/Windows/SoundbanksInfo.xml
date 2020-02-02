@@ -32,6 +32,10 @@
 					<ShortName>Rock_Gameplay.wav</ShortName>
 					<Path>SFX/Rock_Gameplay_D79FB2B7.wem</Path>
 				</File>
+				<File Id="171553015" Language="SFX">
+					<ShortName>FightSong_Menu.wav</ShortName>
+					<Path>SFX/FightSong_Menu_D79FB2B7.wem</Path>
+				</File>
 				<File Id="370314013" Language="SFX">
 					<ShortName>Synth_Gameplay.wav</ShortName>
 					<Path>SFX/Synth_Gameplay_D79FB2B7.wem</Path>

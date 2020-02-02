@@ -28,7 +28,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Synth_Group_Winning_State" ID="{4B9F70A5-C43D-4618-BFC7-D894919EE31D}"/>
+						<CurrentStateRef Name="Synth_Solo_State" ID="{59A61B69-3B48-4C79-B060-44716CEDFFEB}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

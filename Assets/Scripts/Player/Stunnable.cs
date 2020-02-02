@@ -28,7 +28,7 @@ public class Stunnable : MonoBehaviour
         if (!stunnable) { return false; }
         input.DisableMovementForTime(stunDuration);
         StartCoroutine(DisableStunningForTime(stunDuration));
-        // TODO: play stun sound and animation
+        AkSoundEngine.PostEvent("SFX_PL_Stunned", gameObject);
         return true;
     }
 

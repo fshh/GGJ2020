@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Smoke for Elevators.meta
 guid: 04838b02efbee4816bd4dae74510d94f
+=======
+guid: c36cf8ee5ba384a19aafcae25986c8c8
+>>>>>>> master:Assets/Sprites/COG.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

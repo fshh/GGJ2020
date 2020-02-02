@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip stunSound;
     public AudioSource audioSource;
 
+    private SpriteRenderer spriteRenderer;
     private Animator anim;
     private PlayerInput input;
 
@@ -56,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         maxJumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
         minJumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(gravity) * minJumpHeight);
         audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         anim = GetComponentInChildren<Animator>();
         input = GetComponent<PlayerInput>();
     }
@@ -80,17 +82,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /*
-    private void LateUpdate() {
-        if (velocity.y < 0f && !IsGrounded()) {
-            anim.SetInteger("animationState", 3);
-        } else if (Mathf.Abs(velocity.x / 10) >= 0.1f && IsGrounded()) {
-            anim.SetInteger("animationState", 1);
-        } else {
-            anim.SetInteger("animationState", 0);
+    private void LateUpdate()
+    {
+        if (directionalInput.x != 0f)
+        {
+            spriteRenderer.flipX = directionalInput.x > 0;
         }
+        anim.SetBool("Running", Mathf.Abs(directionalInput.x) > 0);
+        anim.SetBool("Grounded", IsGrounded());
+        anim.SetBool("WallSliding", wallSliding);
     }
-    */
 
     public void SetDirectionalInput(Vector2 input)
     {

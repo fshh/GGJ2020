@@ -19,9 +19,13 @@ public class Stunnable : MonoBehaviour
         stunParticles.Stop();
         input = GetComponent<PlayerInput>();
         audioSource = GetComponent<AudioSource>();
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
     }
 
+    private void LateUpdate()
+    {
+        anim.SetBool("Stunned", !stunnable);
+    }
 
     public bool Stun()
     {

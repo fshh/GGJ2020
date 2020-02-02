@@ -14,6 +14,7 @@ public class GrabCog : MonoBehaviour
     public int throwDir;
     //this is either 1 or -1. 1 for right, -1 for left
     private ContactFilter2D contactFilter;
+    private Animator anim;
 
 
     //this is the cog on the ground that gets destoryed when a player picks one up
@@ -23,6 +24,7 @@ public class GrabCog : MonoBehaviour
     {
         myCog = null;
         cogNearMe = null;
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -32,6 +34,11 @@ public class GrabCog : MonoBehaviour
         if (cogNearMe != null && Vector2.Distance(transform.position, cogNearMe.transform.position) > 1) {
             cogNearMe = null;
         }
+    }
+
+    private void LateUpdate()
+    {
+        anim.SetBool("HasCog", myCog != null);
     }
 
     public void OnTriggerStay2D(Collider2D collision)

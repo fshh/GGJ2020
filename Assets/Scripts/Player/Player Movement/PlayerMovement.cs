@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float maxJumpHeight = 4f;
     public float minJumpHeight = 1f;
+    public float bounceVelocityRatio = 0.5f;
     public float timeToJumpApex = .4f;
     public float accelerationTimeAirborne = .2f;
     public float accelerationTimeGrounded = .1f;
@@ -39,8 +40,11 @@ public class PlayerMovement : MonoBehaviour
     private bool bouncing = false;
 
     public AudioClip jumpSound;
-    public AudioClip deathSound;
-    private AudioSource audioSource;
+    public AudioClip grabSound;
+    public AudioClip throwSound;
+    //public AudioClip dropSound;
+    public AudioClip stunSound;
+    public AudioSource audioSource;
 
     private Animator anim;
     private PlayerInput input;
@@ -58,7 +62,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update() 
     {
-        if (Time.timeScale == 0f || !input.CanMove()) {
+        // || !input.CanMove()
+        if (Time.timeScale == 0f ) {
             return;
         }
 
@@ -174,7 +179,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Bounce() {
         bouncing = true;
-        velocity.y = maxJumpVelocity;
+        velocity.y = maxJumpVelocity * bounceVelocityRatio;
         //anim.SetInteger("animationState", 2);
         StartCoroutine(BounceRoutine());
     }
@@ -201,7 +206,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerInput input = GetComponent<PlayerInput>();
         input.DisableMovement();
         //anim.SetTrigger("Die");
-        audioSource.PlayOneShot(deathSound);
+        //audioSource.PlayOneShot(deathSound);
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Controller2D>().enabled = false;
         enabled = false;

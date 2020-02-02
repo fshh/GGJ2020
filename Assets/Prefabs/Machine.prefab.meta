@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Rendering.meta
+guid: 659947c9bc9b0445596e0ad11a779873
+folderAsset: yes
+DefaultImporter:
+=======
 guid: 4235f065e6d1a8944b5616eccfb61580
 PrefabImporter:
+>>>>>>> master:Assets/Prefabs/Machine.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

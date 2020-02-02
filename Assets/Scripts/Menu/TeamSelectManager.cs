@@ -27,6 +27,7 @@ public class TeamSelectManager : MonoBehaviour
         {
             if (p.GetButtonDown("Help"))
             {
+                AkSoundEngine.PostEvent("SFX_UI_Confirm", gameObject);
                 manager.ChangeToScreen(GameSetupManager.Screen.HELP);
             }
         }
@@ -37,6 +38,7 @@ public class TeamSelectManager : MonoBehaviour
             {
                 if (p.GetButtonDown("Confirm"))
                 {
+                    AkSoundEngine.PostEvent("SFX_UI_Confirm", gameObject);
                     manager.ChangeToScreen(GameSetupManager.Screen.LEVELSELECT);
                 }
             }

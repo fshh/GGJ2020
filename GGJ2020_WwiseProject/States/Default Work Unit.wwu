@@ -3,7 +3,7 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{94F4C1C1-E5F5-4A88-A65A-35EB0F8B4E3E}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Gameplay_State_Group" ID="{A7265685-3875-4C26-84BB-450898A5DA9F}">
+				<StateGroup Name="Gameplay" ID="{A7265685-3875-4C26-84BB-450898A5DA9F}">
 					<ChildrenList>
 						<State Name="None" ID="{2FAF0CB9-B5C2-4249-8A71-9B5B4900BE2C}"/>
 						<State Name="Rock_Group_Winning_State" ID="{A0F6FE5A-87A8-4F89-BE24-8635E0FEF56D}"/>
@@ -11,19 +11,6 @@
 						<State Name="Rock_Solo_State" ID="{A9292BAD-2721-41B5-B300-39BC3DB4C70E}"/>
 						<State Name="Synth_Solo_State" ID="{59A61B69-3B48-4C79-B060-44716CEDFFEB}"/>
 						<State Name="Neutral_State" ID="{CD3A2F3B-C666-48C1-AB10-82E7ADBC58D5}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Menu_State_Group" ID="{F3996E17-12CC-4028-ABBF-1C02A6038F60}">
-					<ChildrenList>
-						<State Name="None" ID="{8FE945E5-F3F9-47A5-B7A6-92520E4253E7}"/>
-						<State Name="Menu" ID="{A82244CC-E612-4898-B63C-8887A7C9DAE8}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Fight_Song_State_Group" ID="{4D8834EC-230B-4C0B-996D-84C12C810C71}">
-					<ChildrenList>
-						<State Name="None" ID="{263C0539-74DE-4CB6-BF69-9DD894819A9A}"/>
-						<State Name="Gameplay_State" ID="{DEF04162-D974-4886-AB7A-AE982FC0D7F6}"/>
-						<State Name="Menu_State" ID="{6C123AE3-39D6-4493-9C82-BB09C15C72BA}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

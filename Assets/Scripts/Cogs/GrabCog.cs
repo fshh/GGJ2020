@@ -11,6 +11,8 @@ public class GrabCog : MonoBehaviour
     public Transform heldCogPosit;
     public CogWheel cogNearMe;
     public GrabCog myTeamMate;
+    public int throwDir;
+    //this is either 1 or -1. 1 for right, -1 for left
     private ContactFilter2D contactFilter;
 
 
@@ -34,8 +36,7 @@ public class GrabCog : MonoBehaviour
         if (collision.GetComponentInParent<CogWheel>())
         {
             Debug.Log("touched");
-            cogNearMe = collision.transform.parent.GetComponent<CogWheel>();
-           
+            cogNearMe = collision.GetComponentInParent<CogWheel>();
         }
     }
 
@@ -73,7 +74,22 @@ public class GrabCog : MonoBehaviour
         myCog.GetComponent<Collider2D>().enabled = true;
         //set the physics to ignore this player's teammate
         //throw the sucker
-        myCog.myRB.AddForce(new Vector2(myCog.throwSpeed, myCog.throwHeight));
+        myCog.myRB.velocity = new Vector2(myCog.throwSpeed * throwDir, myCog.throwHeight);
         myCog = null;
+    }
+
+    public void Drop()
+    {
+        if (myCog != null)
+        {
+            myCog.gameObject.layer = LayerMask.NameToLayer("Neutral");
+            myCog.transform.parent = null;
+            myCog.myRB.bodyType = RigidbodyType2D.Dynamic;
+            myCog.GetComponent<Collider2D>().enabled = true;
+            //set the physics to ignore this player's teammate
+            //throw the sucker
+            //myCog.myRB.velocity = new Vector2(myCog.throwSpeed, myCog.throwHeight);
+            myCog = null;
+        }
     }
 }

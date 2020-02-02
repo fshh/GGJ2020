@@ -4,9 +4,9 @@
 [UnityEngine.DisallowMultipleComponent]
 /// @brief An AkRoom is an enclosed environment that can only communicate to the outside/other rooms with AkRoomPortals
 /// @details 
-public class AkRoom : AkTriggerHandler
+public class AkRoom : AkUnityEventHandler
 {
-	public static ulong INVALID_ROOM_ID = unchecked((ulong)-1.0f);
+	public static ulong INVALID_ROOM_ID = unchecked((ulong) -1.0f);
 
 	private static int RoomCount;
 
@@ -16,7 +16,7 @@ public class AkRoom : AkTriggerHandler
 	public int priority = 0;
 
 	/// The reverb auxiliary bus.
-	public AK.Wwise.AuxBus reverbAuxBus = new AK.Wwise.AuxBus();
+	public AK.Wwise.AuxBus reverbAuxBus;
 
 	[UnityEngine.Range(0, 1)]
 	/// The reverb control value for the send to the reverb aux bus.
@@ -27,7 +27,7 @@ public class AkRoom : AkTriggerHandler
 	public float wallOcclusion = 1;
 
 	/// Wwise Event to be posted on the room game object.
-	public AK.Wwise.Event roomToneEvent = new AK.Wwise.Event();
+	public AK.Wwise.Event roomToneEvent;
 
 	[UnityEngine.Range(0, 1)]
 	[UnityEngine.Tooltip("Send level for sounds that are posted on the room game object; adds reverb to ambience and room tones. Valid range: (0.f-1.f). A value of 0 disables the aux send.")]
@@ -57,7 +57,7 @@ public class AkRoom : AkTriggerHandler
 		roomParams.Front.Y = transform.forward.y;
 		roomParams.Front.Z = transform.forward.z;
 
-		roomParams.ReverbAuxBus = reverbAuxBus.Id;
+		roomParams.ReverbAuxBus = (uint) reverbAuxBus.ID;
 		roomParams.ReverbLevel = reverbLevel;
 		roomParams.WallOcclusion = wallOcclusion;
 
@@ -66,9 +66,11 @@ public class AkRoom : AkTriggerHandler
 
 		RoomCount++;
 		AkSoundEngine.SetRoom(GetID(), roomParams, name);
+	}
 
-		/// In case a room is disbled and re-enabled. 
-		AkRoomPortalManager.RegisterRoomUpdate(this);
+	protected override void Start()
+	{
+		base.Start();
 	}
 
 	public override void HandleEvent(UnityEngine.GameObject in_gameObject)
@@ -78,8 +80,6 @@ public class AkRoom : AkTriggerHandler
 
 	private void OnDisable()
 	{
-		AkRoomPortalManager.RegisterRoomUpdate(this);
-
 		RoomCount--;
 		AkSoundEngine.RemoveRoom(GetID());
 	}

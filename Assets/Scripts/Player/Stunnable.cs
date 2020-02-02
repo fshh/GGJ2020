@@ -35,6 +35,7 @@ public class Stunnable : MonoBehaviour
     private IEnumerator DisableStunningForTime(float duration)
     {
         stunParticles.Play();
+        GetComponent<GrabCog>().Drop();
         stunnable = false;
         yield return new WaitForSecondsRealtime(stunDuration);
         stunnable = true;

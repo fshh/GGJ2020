@@ -45,6 +45,9 @@ public class AkInitSettings : global::System.IDisposable {
     }
   }
 
+  public int pfnAssertHook { set { } get { return 0; }
+  }
+
   public uint uMaxNumPaths { set { AkSoundEnginePINVOKE.CSharp_AkInitSettings_uMaxNumPaths_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkInitSettings_uMaxNumPaths_get(swigCPtr); } 
   }
 

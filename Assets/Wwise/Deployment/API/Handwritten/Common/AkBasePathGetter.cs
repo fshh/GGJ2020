@@ -30,9 +30,9 @@ public partial class AkBasePathGetter
 		if (!string.IsNullOrEmpty(platformSubDir))
 			return platformSubDir;
 
-#if UNITY_EDITOR_WIN || (UNITY_STANDALONE_WIN && !UNITY_EDITOR) || UNITY_WSA
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN || UNITY_WSA
 		platformSubDir = "Windows";
-#elif UNITY_EDITOR_OSX || (UNITY_STANDALONE_OSX && !UNITY_EDITOR)
+#elif UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
 		platformSubDir = "Mac";
 #elif UNITY_STANDALONE_LINUX
 		platformSubDir = "Linux";

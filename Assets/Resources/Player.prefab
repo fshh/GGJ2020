@@ -371,10 +371,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  wallSlideSpeedMax: 5
-  wallStickTime: 0.01
-  jumpSound: {fileID: 0}
-  deathSound: {fileID: 0}
 --- !u!1 &1866278485275065717
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +420,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.75
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 5142f2fc
+  m_ApplyToSortingLayers: 5142f2fc93918886
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0

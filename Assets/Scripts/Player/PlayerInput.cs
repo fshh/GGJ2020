@@ -7,8 +7,6 @@ using Rewired;
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerInput : MonoBehaviour
 {
-    [System.Serializable]
-    public enum PlayerNumber { ONE = 1, TWO = 2, THREE = 3, FOUR = 4 }
     public PlayerNumber playerNumber;
     public TextMeshProUGUI playerNumberText;
 

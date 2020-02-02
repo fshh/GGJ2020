@@ -2,15 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public enum PlayerNumber { ONE = 1, TWO = 2, THREE = 3, FOUR = 4 }
+[System.Serializable]
+public enum TeamNumber { NULL = 0, ONE = 1, TWO = 2 }
+
 public static class PlayerToTeamMap
 {
     // Map player numbers to their team
     // 1 = team 1, 2 = team 2
-    private static Dictionary<PlayerInput.PlayerNumber, int> map = new Dictionary<PlayerInput.PlayerNumber, int>(4);
+    private static Dictionary<PlayerNumber, TeamNumber> teamMap = new Dictionary<PlayerNumber, TeamNumber>()
+    {
+        { PlayerNumber.ONE, TeamNumber.NULL },
+        { PlayerNumber.TWO, TeamNumber.NULL },
+        { PlayerNumber.THREE, TeamNumber.NULL },
+        { PlayerNumber.FOUR, TeamNumber.NULL }
+    };
 
-    private static bool IsTeamFull(int team) {
+    public static bool TeamsAreReady()
+    {
+        return IsTeamFull(TeamNumber.ONE) && IsTeamFull(TeamNumber.TWO);
+    }
+
+    private static bool IsTeamFull(TeamNumber team) {
         int count = 0;
-        foreach (int t in map.Values) {
+        foreach (TeamNumber t in teamMap.Values) {
             if (t == team) {
                 count++;
             }
@@ -18,19 +34,24 @@ public static class PlayerToTeamMap
         return count >= 2;
     }
 
-    public static bool AssignPlayerToTeam(PlayerInput.PlayerNumber player, int team) {
-        if (team != 1 && team != 2) { return false; }
+    public static bool AssignPlayerToTeam(PlayerNumber player, TeamNumber team) {
+        if (team == TeamNumber.NULL) { return false; }
 
         // If team is not full, assign to team
         if (!IsTeamFull(team)) {
-            map[player] = team;
+            teamMap[player] = team;
             return true;
         }
 
         return false;
     }
 
-    public static int GetPlayerTeam(PlayerInput.PlayerNumber player) {
-        return map[player];
+    public static void ResetPlayerTeam(PlayerNumber player)
+    {
+        teamMap[player] = TeamNumber.NULL;
+    }
+
+    public static TeamNumber GetPlayerTeam(PlayerNumber player) {
+        return teamMap[player];
     }
 }

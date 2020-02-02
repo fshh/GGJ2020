@@ -7,7 +7,7 @@ using DG.Tweening;
 
 public class PlayerSelect : MonoBehaviour
 {
-    public PlayerInput.PlayerNumber playerNumber;
+    public PlayerNumber playerNumber;
     public float transitionTime = 0.5f;
     public float confirmTime = 0.5f;
     public float confirmShakeStrength = 100f;
@@ -19,6 +19,7 @@ public class PlayerSelect : MonoBehaviour
     public Image leftArrow;
     public Image rightArrow;
 
+    private Tween moveTween;
     private Player player;
     private int currentPos = 1;
     private bool confirmed = false;
@@ -45,33 +46,56 @@ public class PlayerSelect : MonoBehaviour
             Confirm();
         }
 
-        if (confirmed && player.GetButtonDown("Cancel"))
+        if (player.GetButtonDown("Cancel"))
         {
-            UnConfirm();
+            if (confirmed)
+            {
+                UnConfirm();
+            }
+            else
+            {
+                FindObjectOfType<TeamSelectManager>().GoBack();
+            }
         }
     }
 
     private void UpdateTextPosition()
     {
         UpdateArrows();
-        selectionPanel.DOAnchorPos(textPositions[currentPos].anchoredPosition, transitionTime);
+        moveTween = selectionPanel.DOAnchorPos(textPositions[currentPos].anchoredPosition, transitionTime);
+        moveTween.Play();
     }
 
     private void Confirm()
     {
-        confirmed = true;
-        leftArrow.enabled = false;
-        rightArrow.enabled = false;
-        playerTextElement.DOShakeAnchorPos(confirmTime, confirmShakeStrength, confirmShakeVibrato);
-        playerTextElement.DOScale(1.5f, confirmTime);
+        if (moveTween.IsPlaying()) { return; }
+
+        TeamNumber team = currentPos < 1 ? TeamNumber.ONE : TeamNumber.TWO;
+        if (PlayerToTeamMap.AssignPlayerToTeam(playerNumber, team))
+        {
+            confirmed = true;
+            leftArrow.enabled = false;
+            rightArrow.enabled = false;
+            playerTextElement.DOShakeAnchorPos(confirmTime, confirmShakeStrength, confirmShakeVibrato);
+            playerTextElement.DOScale(1.5f, confirmTime);
+        } else
+        {
+            Sequence failConfirm = DOTween.Sequence();
+            failConfirm.Append(playerTextElement.DOScale(1.2f, confirmTime / 2));
+            failConfirm.Append(playerTextElement.DOScale(1f, confirmTime / 2));
+        }
     }
 
     private void UnConfirm()
     {
-        confirmed = false;
-        playerTextElement.DOShakeAnchorPos(confirmTime, confirmShakeStrength * unConfirmShakeStrengthRatio, confirmShakeVibrato);
-        playerTextElement.DOScale(1.0f, confirmTime);
-        UpdateArrows();
+        if (confirmed)
+        {
+            PlayerToTeamMap.ResetPlayerTeam(playerNumber);
+            confirmed = false;
+            playerTextElement.DOShakeAnchorPos(confirmTime, confirmShakeStrength * unConfirmShakeStrengthRatio, confirmShakeVibrato);
+            playerTextElement.DOScale(1.0f, confirmTime);
+            UpdateArrows();
+        }
     }
 
     private void UpdateArrows()

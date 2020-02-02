@@ -11,6 +11,8 @@ public class CogWheel : MonoBehaviour
     public float throwHeight;
     public GrabCog carrier;
     public Rigidbody2D myRB;
+
+    private bool docked;
     //public Team team
 
 
@@ -19,6 +21,7 @@ public class CogWheel : MonoBehaviour
 
         //Physics.IgnoreCollision(GetComponent<Collider>(), agressor.myTeammate.GetComponent<Collider>());
         myRB = GetComponent<Rigidbody2D>();
+        docked = false;
     }
 
     public void Update()
@@ -36,10 +39,18 @@ public class CogWheel : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.layer == 9)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Platform"))
         {
-            //it has hit a wall or something else
-            gameObject.layer = 10;
+            ResetIgnore();
+        }
+
+        //if the layer is not neutral
+        if(gameObject.layer != LayerMask.NameToLayer("Neutral"))
+        {
+            if (collision.gameObject.GetComponent<Stunnable>())
+            {
+                collision.gameObject.GetComponent<Stunnable>().Stun();
+            }
         }
     }
 
@@ -51,14 +62,30 @@ public class CogWheel : MonoBehaviour
 
     public void IgnorePlayers(GrabCog thrower)
     {
-        gameObject.layer = thrower.gameObject.layer;
+        if(thrower.gameObject.layer == LayerMask.NameToLayer("Team1"))
+        {
+            gameObject.layer = LayerMask.NameToLayer("Ball1");
+        }
+        else if(thrower.gameObject.layer == LayerMask.NameToLayer("Team2"))
+        {
+            gameObject.layer = LayerMask.NameToLayer("Ball2");
+        }
         
         
     }
 
     public void ResetIgnore()
     {
-        gameObject.layer = 0;
+        gameObject.layer = LayerMask.NameToLayer("Neutral");
+    }
+
+    public void DockToggle() {
+        docked = !docked;
+        Debug.Log(docked);
+    }
+
+    public bool isDocked() {
+        return docked;
     }
 
 }

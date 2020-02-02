@@ -11,6 +11,9 @@ public class GrabCog : MonoBehaviour
     public Transform heldCogPosit;
     public CogWheel cogNearMe;
     public GrabCog myTeamMate;
+    private ContactFilter2D contactFilter;
+
+
     //this is the cog on the ground that gets destoryed when a player picks one up
 
     // Start is called before the first frame update
@@ -23,7 +26,7 @@ public class GrabCog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -32,14 +35,16 @@ public class GrabCog : MonoBehaviour
         {
             Debug.Log("touched");
             cogNearMe = collision.transform.parent.GetComponent<CogWheel>();
+           
         }
     }
 
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponentInParent<CogWheel>())
+        if (collision.GetComponentInParent<CogWheel>())
         {
+            //Debug.Log("Stepped away");
             cogNearMe = null;
         }
     }
@@ -47,9 +52,11 @@ public class GrabCog : MonoBehaviour
 
     public void PickUp()
     {
-        
         myCog = cogNearMe;
-        myCog.IgnorePlayers(this);
+        if (myCog.isDocked()) {
+            myCog.DockToggle();
+            myCog.transform.parent.gameObject.transform.parent.GetComponent<CogDockController>().RemoveCog();
+        }
         cogNearMe = null;
         myCog.transform.parent = heldCogPosit;
         myCog.transform.position = heldCogPosit.position;
@@ -60,6 +67,7 @@ public class GrabCog : MonoBehaviour
     public void ThrowCog()
     {
         //LayerMask teamToIgnore = LayerMask.NameToLayer()
+        myCog.IgnorePlayers(this);
         myCog.transform.parent = null;
         myCog.myRB.bodyType = RigidbodyType2D.Dynamic;
         myCog.GetComponent<Collider2D>().enabled = true;

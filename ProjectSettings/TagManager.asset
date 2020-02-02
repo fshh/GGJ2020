@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Through
   - SpawnPoint
+  - Cog
+  - CogDock
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - Team2
   - Platform
   - Neutral
-  - 
-  - 
+  - Ball1
+  - Ball2
   - 
   - 
   - 

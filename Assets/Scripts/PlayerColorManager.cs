@@ -14,7 +14,7 @@ public class PlayerColorManager : MonoBehaviour
         SpriteRenderer bodySprite = player.GetComponentInChildren<SpriteRenderer>();
         TextMeshProUGUI[] texts = player.GetComponentsInChildren<TextMeshProUGUI>();
 
-        Color col = pNum <= 2 ? Team1 : Team2;
+        Color col = GetPlayerColor(pNum);
 
         bodySprite.color = col;
         foreach (TextMeshProUGUI t in texts) {
@@ -23,6 +23,6 @@ public class PlayerColorManager : MonoBehaviour
     }
 
     public Color GetPlayerColor(int pNum) {
-        return pNum <= 2 ? Team1 : Team2;
+        return PlayerToTeamMap.GetPlayerTeam((PlayerNumber)pNum) == TeamNumber.ONE ? Team1 : Team2;
     }
 }

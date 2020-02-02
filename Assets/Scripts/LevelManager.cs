@@ -24,12 +24,17 @@ public class LevelManager : MonoBehaviour
     private void SpawnPlayers()
     {
         Transform spawns = GameObject.Find("SpawnPoints").transform;
-        // CHANGE BACK TO DEFAULT PLAYER PREFAB AFTER TESTING
-        GameObject playerPrefab = Resources.Load<GameObject>("cOGpLAYER");
+        GameObject playerPrefab = Resources.Load<GameObject>("Player");
+
+        // this is bad coding style but it works
+        int team1Index = 0;
+        int team2Index = 2;
+
         for (int ii = 0; ii < numPlayers; ii++)
         {
             // Instantiate player
-            GameObject player = Instantiate(playerPrefab, spawns.GetChild(ii).transform.position, Quaternion.identity);
+            int index = PlayerToTeamMap.GetPlayerTeam((PlayerNumber)ii + 1) == TeamNumber.ONE ? team1Index++ : team2Index++;
+            GameObject player = Instantiate(playerPrefab, spawns.GetChild(index).transform.position, Quaternion.identity);
 
             // Set player name, number, and colors
             player.name = "Player " + (ii + 1);

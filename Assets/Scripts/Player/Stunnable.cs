@@ -11,6 +11,7 @@ public class Stunnable : MonoBehaviour
     private PlayerInput input;
     private AudioSource audioSource;
     private Animator anim;
+    public ParticleSystem stunParticles;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class Stunnable : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
     }
+
 
     public bool Stun()
     {
@@ -31,6 +33,7 @@ public class Stunnable : MonoBehaviour
 
     private IEnumerator DisableStunningForTime(float duration)
     {
+        stunParticles.Play();
         stunnable = false;
         yield return new WaitForSecondsRealtime(stunDuration);
         stunnable = true;

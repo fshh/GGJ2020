@@ -15,35 +15,35 @@ MonoBehaviour:
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: d6fea2468e090e44b44cba336a3cbc8f
     GuidInternal: 
-    m_lastTime: -8586210134804775808
+    m_lastTime: -8586209980534775808
     List: []
   - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 04ff3659c508c642887b635db44d8ae2
     GuidInternal: 
-    m_lastTime: -8586210157224775808
+    m_lastTime: -8586209980534775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 2e0be7270bc919498468de7ae34a1b60
     GuidInternal: 
-    m_lastTime: -8586210157224775808
+    m_lastTime: -8586209980534775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 8e24202f4f6aeb4fb3e83da67fe7289e
     GuidInternal: 
-    m_lastTime: -8586210134804775808
+    m_lastTime: -8586209980534775808
     List: []
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 77d0bec002ca1a49bf77fe57a2a79a21
     GuidInternal: 
-    m_lastTime: -8586209477964775808
+    m_lastTime: -8586209444104775808
     List:
     - name: Fight_Song_Bank
       guid: b15bb46905bcb142bfa220416a64ffa9
@@ -57,15 +57,15 @@ MonoBehaviour:
   EventWwu:
   - PhysicalPath: Events/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 1ce2c3b59413db40bd97a801550eeb35
     GuidInternal: 
-    m_lastTime: -8586210134804775808
+    m_lastTime: -8586209980534775808
     List: []
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: dcce6f1183573f46a2e0297f8fc94a91
     GuidInternal: 
-    m_lastTime: -8586209481304775808
+    m_lastTime: -8586209444114775808
     List:
     - name: Rock_Solo_Win
       guid: 9c85f0f68d47ea47acd97d65c4269cbc
@@ -130,22 +130,22 @@ MonoBehaviour:
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: a03129cdc48d3142a1e8e56f78adea9d
     GuidInternal: 
-    m_lastTime: -8586210134804775808
+    m_lastTime: -8586209980534775808
     List: []
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 62015d8079771e46a432b6df1e6eca75
     GuidInternal: 
-    m_lastTime: -8586210157224775808
+    m_lastTime: -8586209980534775808
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: c1c1f494f5e5884aa65a35eb0f8b4e3e
     GuidInternal: 
-    m_lastTime: -8586209485414775808
+    m_lastTime: -8586209509284775808
     List:
     - name: Gameplay
       guid: 855626a77538264c84bb450898a5da9f
@@ -199,28 +199,28 @@ MonoBehaviour:
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: eb511002afc5ee4fbbe1a6ef88fed1c6
     GuidInternal: 
-    m_lastTime: -8586210134804775808
+    m_lastTime: -8586209980534775808
     List: []
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: c5eaca80d57d954197b818a711651b42
     GuidInternal: 
-    m_lastTime: -8586210157224775808
+    m_lastTime: -8586209980534775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit 2.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 11e76093cd28fc45920cd362f2cacd98
     GuidInternal: 
-    m_lastTime: -8586210134804775808
+    m_lastTime: -8586209980534775808
     List: []
   - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00000000000000000000000000000000
+    guid: 33517384aab0d341b0feb1e1adea3e76
     GuidInternal: 
-    m_lastTime: -8586210157224775808
+    m_lastTime: -8586209980534775808
     List: []
   ExpandedItems:
   - /GGJ2020_WwiseProject

@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 711494374435104010}
   m_Layer: 11
   m_Name: CogWheel
-  m_TagString: Untagged
+  m_TagString: Cog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c5481e79da5aa459dd884294504e7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwSpeed: 1000
-  throwHeight: 100
+  throwSpeed: 20
+  throwHeight: 5
   carrier: {fileID: 0}
   myRB: {fileID: 8890077934721167359}
 --- !u!50 &8890077934721167359

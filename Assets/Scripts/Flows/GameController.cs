@@ -9,7 +9,6 @@ public class GameController : MonoBehaviour
     public GameObject soloist2;
     public Canvas gameOverUI;
     public float liftSpeed;
-    public float maxY;
     private int winner;
     private float team1Cogs;
     private float team2Cogs;
@@ -25,9 +24,9 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (soloist1.transform.position.y >= maxY) {
+        if (soloist1.transform.position.y >= 9.5f) {
             winner = 1;
-        } else if (soloist2.transform.position.y >= maxY) {
+        } else if (soloist2.transform.position.y >= 9.5f) {
             winner = 2;
         }
 

@@ -43,14 +43,6 @@ public class PlayerInput : MonoBehaviour
         if (canMove)
         {
             Vector2 directionalInput = new Vector2(player.GetAxisRaw(horizontalInput), player.GetAxisRaw(verticalInput));
-            if(directionalInput.x > 0)
-            {
-                GetComponent<GrabCog>().throwDir = 1;
-            }
-            else if(directionalInput.x < 0)
-            {
-                GetComponent<GrabCog>().throwDir = -1;
-            }
             movement.SetDirectionalInput(directionalInput);
 
             if (player.GetButtonDown(interactInput))

@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a7aecec1fa3452181fe67fc5924136, type: 3}
   m_Name: AkWwiseInitializationSettings
   m_EditorClassIdentifier: 
-  PlatformSettingsNameList: []
-  PlatformSettingsList: []
+  PlatformSettingsNameList:
+  - Mac
+  - Windows
+  PlatformSettingsList:
+  - {fileID: 11400000, guid: 1115b6c22cbec49f18fe0887b583dda3, type: 2}
+  - {fileID: 11400000, guid: 26b85e0b02f2a4b8e85ea61bb5357906, type: 2}
   InvalidReferencePlatforms: []
   UserSettings:
     m_BasePath: Audio/GeneratedSoundBanks
@@ -45,6 +49,7 @@ MonoBehaviour:
       m_PoolSize: 4194304
       m_MaxSoundPropagationDepth: 8
       m_DiffractionFlags: -1
+      m_MovementThreshold: 1
   AdvancedSettings:
     m_IOMemorySize: 2097152
     m_TargetAutoStreamBufferLengthMs: 380
@@ -57,8 +62,9 @@ MonoBehaviour:
     m_MonitorQueuePoolSize: 65536
     m_MaximumHardwareTimeoutMs: 1000
     m_SpatialAudioSettings:
-      m_DiffractionShadowAttenuationFactor: 0
-      m_DiffractionShadowDegrees: 0
+      m_DiffractionShadowAttenuationFactor: 2
+      m_DiffractionShadowDegrees: 30
+    m_RenderDuringFocusLoss: 0
   CommsSettings:
     m_PoolSize: 262144
     m_DiscoveryBroadcastPort: 24024

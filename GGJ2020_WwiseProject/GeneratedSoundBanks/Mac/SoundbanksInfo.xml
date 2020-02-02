@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>/Users/Dayna/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Documents/GitHub/GGJ2020/GGJ2020_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/Dayna/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Documents/GitHub/GGJ2020/GGJ2020_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Dayna/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Documents/GitHub/GGJ2020/GGJ2020_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Dayna/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Documents/GitHub/GGJ2020/GGJ2020_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="616830705" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Fight_Song_Soundbank</ObjectPath>
+			<ShortName>Fight_Song_Soundbank</ShortName>
+			<Path>Fight_Song_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="171267552" Name="Rock_Wins" ObjectPath="\Events\Default Work Unit\Rock_Wins" MaxAttenuation="0.000000"/>
+				<Event Id="2289732960" Name="Set_State_Gameplay" ObjectPath="\Events\Default Work Unit\Set_State_Gameplay" MaxAttenuation="0.000000"/>
+				<Event Id="2302270969" Name="Set_State_Menu" ObjectPath="\Events\Default Work Unit\Set_State_Menu" MaxAttenuation="0.000000"/>
+				<Event Id="1928154282" Name="Set_State_Rock_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Rock_Winning" MaxAttenuation="0.000000"/>
+				<Event Id="3921242951" Name="Set_State_Synth_Winning" ObjectPath="\Events\Default Work Unit\Set_State_Synth_Winning" MaxAttenuation="0.000000"/>
+				<Event Id="1114964412" Name="Start_Game" ObjectPath="\Events\Default Work Unit\Start_Game"/>
+				<Event Id="1405444765" Name="Synth_Wins" ObjectPath="\Events\Default Work Unit\Synth_Wins" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="107542522" Language="SFX">
+					<ShortName>Rock_Gameplay.wav</ShortName>
+					<Path>SFX/Rock_Gameplay_D79FB2B7.wem</Path>
+				</File>
+				<File Id="370314013" Language="SFX">
+					<ShortName>Synth_Gameplay.wav</ShortName>
+					<Path>SFX/Synth_Gameplay_D79FB2B7.wem</Path>
+				</File>
+				<File Id="734555033" Language="SFX">
+					<ShortName>Crowd_Roar.wav</ShortName>
+					<Path>SFX/Crowd_Roar_D79FB2B7.wem</Path>
+				</File>
+				<File Id="877071152" Language="SFX">
+					<ShortName>FightSong_Menu.wav</ShortName>
+					<Path>SFX/FightSong_Menu_D79FB2B7.wem</Path>
+				</File>
+				<File Id="912601529" Language="SFX">
+					<ShortName>Crowd Chatter.wav</ShortName>
+					<Path>SFX/Crowd Chatter_D79FB2B7.wem</Path>
+				</File>
+				<File Id="973698791" Language="SFX">
+					<ShortName>Synth_Solo.wav</ShortName>
+					<Path>SFX/Synth_Solo_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1036935377" Language="SFX">
+					<ShortName>Rock_Solo.wav</ShortName>
+					<Path>SFX/Rock_Solo_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

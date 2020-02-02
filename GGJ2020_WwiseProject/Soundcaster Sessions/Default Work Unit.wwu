@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{426E0A3F-18B1-401C-8372-F8C32D41970C}" SchemaVersion="94">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{426E0A3F-18B1-401C-8372-F8C32D41970C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{426E0A3F-18B1-401C-8372-F8C32D41970C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Gameplay Test" ID="{7F04A271-6388-4557-AC33-10ED1DF3418D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Start_Game" ID="{0B3B430A-5311-4BBF-9A18-904E0E5A086B}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Menu" ID="{C0802F5A-960A-4CCE-9E89-21CE90DF7C2C}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Gameplay" ID="{812012EF-95E7-4895-AA11-B49247399810}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Synth_Winning" ID="{F49A49FB-EC60-458B-887D-4D4F43EFE62F}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Rock_Winning" ID="{A05C8740-CF77-47E0-97B3-F8A15044078F}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Synth_Wins" ID="{F6F0859C-478D-47EA-ACD9-7D65C4269CBC}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Rock_Wins" ID="{413B3B81-0A52-49E0-8DAA-DF8609448367}" WorkUnitID="{116FCEDC-5783-463F-A2E0-297F8FC94A91}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Menu" ID="{A82244CC-E612-4898-B63C-8887A7C9DAE8}"/>
+						<CurrentStateRef Name="Menu_State" ID="{6C123AE3-39D6-4493-9C82-BB09C15C72BA}"/>
+						<CurrentStateRef Name="None" ID="{2FAF0CB9-B5C2-4249-8A71-9B5B4900BE2C}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

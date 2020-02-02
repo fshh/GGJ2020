@@ -4,6 +4,16 @@
 		<WorkUnit Name="Default Work Unit" ID="{84735133-B0AA-41D3-B0FE-B1E1ADEA3E76}" PersistMode="Standalone">
 			<ChildrenList>
 				<Trigger Name="SFX_PL_ThrowGear" ID="{E8233C80-CFF4-4AF4-AB76-B52651880AC8}"/>
+				<Trigger Name="SFX_ENV_GearTakenFromTerminal" ID="{A50BB432-2E60-494C-B10B-E25490F2573F}"/>
+				<Trigger Name="SFX_ENV_GearPlacedinTerminal" ID="{4AA70A33-34EB-4D1E-996C-4D7907F56E02}"/>
+				<Trigger Name="SFX_PL_Jump" ID="{DC1D187E-A797-4200-B68B-61F96795647F}"/>
+				<Trigger Name="SFX_PL_PickupGear" ID="{5EFEEFC2-7FDA-4F65-A206-F99B9E2998A5}"/>
+				<Trigger Name="SFX_PL_Stunned" ID="{4E5B0990-68F6-4640-8A70-5DEE18C5E9AD}"/>
+				<Trigger Name="SFX_UI_BigConfirm" ID="{26A634E1-25C3-47A8-ADD5-57737C50BA98}"/>
+				<Trigger Name="SFX_UI_CancelBack" ID="{AD5F9700-D56C-4782-8F40-1DB4942FC464}"/>
+				<Trigger Name="SFX_UI_Confirm" ID="{7F2C5FA3-991B-4A89-AB09-28E437FBE70A}"/>
+				<Trigger Name="SFX_UI_Error" ID="{BB8B007B-5FC4-4262-8DC1-D42A4122C4C3}"/>
+				<Trigger Name="SFX_UI_Movement" ID="{5FB78716-F68A-4758-AE98-683DC9836BD8}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

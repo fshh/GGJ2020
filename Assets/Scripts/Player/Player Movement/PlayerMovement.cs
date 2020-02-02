@@ -40,8 +40,11 @@ public class PlayerMovement : MonoBehaviour
     private bool bouncing = false;
 
     public AudioClip jumpSound;
-    public AudioClip deathSound;
-    private AudioSource audioSource;
+    public AudioClip grabSound;
+    public AudioClip throwSound;
+    //public AudioClip dropSound;
+    public AudioClip stunSound;
+    public AudioSource audioSource;
 
     private Animator anim;
     private PlayerInput input;
@@ -202,7 +205,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerInput input = GetComponent<PlayerInput>();
         input.DisableMovement();
         //anim.SetTrigger("Die");
-        audioSource.PlayOneShot(deathSound);
+        //audioSource.PlayOneShot(deathSound);
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Controller2D>().enabled = false;
         enabled = false;

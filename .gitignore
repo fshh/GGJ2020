@@ -10,7 +10,7 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
-# Ignore WWise Cache Folder
+# Ignore WWise cache folder
 **/.cache
 
 # Ignore hidden Mac files

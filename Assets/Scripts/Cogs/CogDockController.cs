@@ -31,7 +31,7 @@ public class CogDockController : MonoBehaviour
             collider.gameObject.GetComponent<CogWheel>().DockToggle();
             collider.gameObject.transform.parent = cogPosit;
             collider.gameObject.transform.position = cogPosit.position;
-            collider.gameObject.layer = LayerMask.NameToLayer("Default");
+            collider.gameObject.layer = LayerMask.NameToLayer("Neutral");
             collider.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             gameController.AddCog(team);
         }

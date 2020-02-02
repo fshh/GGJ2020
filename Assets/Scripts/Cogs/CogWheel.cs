@@ -11,6 +11,8 @@ public class CogWheel : MonoBehaviour
     public float throwHeight;
     public GrabCog carrier;
     public Rigidbody2D myRB;
+
+    private bool docked;
     //public Team team
 
 
@@ -19,6 +21,7 @@ public class CogWheel : MonoBehaviour
 
         //Physics.IgnoreCollision(GetComponent<Collider>(), agressor.myTeammate.GetComponent<Collider>());
         myRB = GetComponent<Rigidbody2D>();
+        docked = false;
     }
 
     public void Update()
@@ -74,6 +77,15 @@ public class CogWheel : MonoBehaviour
     public void ResetIgnore()
     {
         gameObject.layer = LayerMask.NameToLayer("Neutral");
+    }
+
+    public void DockToggle() {
+        docked = !docked;
+        Debug.Log(docked);
+    }
+
+    public bool isDocked() {
+        return docked;
     }
 
 }

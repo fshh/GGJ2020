@@ -33,7 +33,7 @@ public class GrabCog : MonoBehaviour
     {
         if (collision.GetComponentInParent<CogWheel>())
         {
-            //Debug.Log("touched");
+            Debug.Log("touched");
             cogNearMe = collision.transform.parent.GetComponent<CogWheel>();
            
         }
@@ -52,9 +52,11 @@ public class GrabCog : MonoBehaviour
 
     public void PickUp()
     {
-        
         myCog = cogNearMe;
-        myCog.IgnorePlayers(this);
+        if (myCog.isDocked()) {
+            myCog.DockToggle();
+            myCog.transform.parent.gameObject.transform.parent.GetComponent<CogDockController>().RemoveCog();
+        }
         cogNearMe = null;
         myCog.transform.parent = heldCogPosit;
         myCog.transform.position = heldCogPosit.position;
@@ -65,6 +67,7 @@ public class GrabCog : MonoBehaviour
     public void ThrowCog()
     {
         //LayerMask teamToIgnore = LayerMask.NameToLayer()
+        myCog.IgnorePlayers(this);
         myCog.transform.parent = null;
         myCog.myRB.bodyType = RigidbodyType2D.Dynamic;
         myCog.GetComponent<Collider2D>().enabled = true;
